@@ -6,9 +6,11 @@
 - [x] Create core page architecture
 - [x] Add services, RouteLedger, work, about, and contact content
 - [x] Build responsive visual foundation
+- [x] Connect PawCircle business email with an initial working mailto contact flow
+- [x] Add canonical domain metadata, robots, and sitemap configuration
+- [ ] Replace mailto contact flow with server-side form delivery
 - [ ] Add real project imagery
-- [ ] Connect PawCircle business email and contact form
-- [ ] Add final domain metadata and social previews
+- [ ] Add social preview image
 - [ ] Run Lighthouse/accessibility review
 - [ ] Deploy and connect pawcirclellc.com
 
@@ -22,6 +24,7 @@
 
 ## Phase 3 — Product growth
 
-- [ ] Expand RouteLedger product page as milestones ship
-- [ ] Add RouteLedger screenshots/demo when ready
+- [ ] Finalize a distinctive product name; RouteLedger remains the working title for now
+- [ ] Expand the product page as milestones ship
+- [ ] Add product screenshots/demo when ready
 - [ ] Add future PawCircle software products only when they fit the small-service-business mission
