@@ -10,7 +10,7 @@ Public positioning should not restrict PawCircle to pet businesses. Minnlawn and
 
 ## 2026-09-04 — RouteLedger is a PawCircle product
 
-RouteLedger will be presented as a distinct product developed under PawCircle LLC. It should keep its own product name and identity.
+RouteLedger is currently presented as a distinct PawCircle product, but the name is now treated as a working title while a more distinctive final name is evaluated. The product identity should reflect the broader direction beyond mileage: work, mileage, expected income, expenses, invoicing, and simple business summaries.
 
 ## 2026-09-04 — Mahaku stays separate
 
@@ -31,3 +31,11 @@ The site must use a responsive hamburger menu on smaller screens. The menu must 
 ## 2026-09-04 — PawCircle business email is the public contact address
 
 Public site contact uses `pawcirclellc@gmail.com`. Rebecca's personal email should not be exposed on the PawCircle LLC site. The first working contact form uses a mailto flow so inquiries are addressed directly to PawCircle LLC without requiring third-party credentials; server-side delivery remains a pre-launch enhancement.
+
+## 2026-09-04 — Production identity should be centralized
+
+Company name, tagline, public email, location, canonical domain, and current product-name status live in `lib/site.ts` so the site does not scatter business identity across unrelated components.
+
+## 2026-09-04 — pawcirclellc.com is the canonical website domain
+
+Production metadata, robots configuration, and sitemap generation use `https://pawcirclellc.com` as the canonical public domain. Deployment and DNS connection still need to be completed before launch.
