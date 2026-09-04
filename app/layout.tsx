@@ -2,14 +2,27 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
+import { siteConfig } from "../lib/site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: "PawCircle LLC | Practical Technology for Service Businesses",
-    template: "%s | PawCircle LLC",
+    default: `${siteConfig.name} | Practical Technology for Independent Service Businesses`,
+    template: `%s | ${siteConfig.name}`,
   },
-  description:
-    "Practical websites and simple business tools for independent service businesses.",
+  description: siteConfig.description,
+  applicationName: siteConfig.name,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: `${siteConfig.name} | Practical Technology for Independent Service Businesses`,
+    description: siteConfig.description,
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
