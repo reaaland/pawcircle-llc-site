@@ -4,6 +4,7 @@ import { siteConfig } from "../lib/site";
 const routes = [
   "",
   "/services",
+  "/pricing",
   "/work",
   "/work/minnlawn",
   "/work/pawcircle",
