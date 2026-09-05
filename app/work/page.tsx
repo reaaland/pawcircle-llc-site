@@ -8,7 +8,7 @@ export default function WorkPage() {
     <main>
       <section className="shell page-shell" style={{ paddingBottom: "34px" }}>
         <p className="eyebrow">WORK</p>
-        <h1>Real projects, real constraints, useful outcomes.</h1>
+        <h1>Real projects, real business needs, useful outcomes.</h1>
         <p className="lede page-lede">
           Selected client and software work showing practical problem solving, responsive development, and attention to the details small businesses depend on.
         </p>
