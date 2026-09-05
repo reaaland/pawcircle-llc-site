@@ -13,8 +13,8 @@ const services = [
   },
   {
     number: "03",
-    title: "Practical technology help",
-    body: "Help untangling forms, Google tools, website workflows, integrations, and other small-business technology problems without unnecessary complexity.",
+    title: "Online business tools",
+    body: "Help with contact and quote forms, Google tools, simple automations, integrations, and other online tasks that can make day-to-day work easier.",
   },
 ];
 
@@ -23,8 +23,8 @@ export default function HomePage() {
     <main>
       <section className="hero shell">
         <div className="hero-copy">
-          <p className="eyebrow">ROCHESTER, MINNESOTA · SMALL-BUSINESS TECHNOLOGY</p>
-          <h1>Practical websites and technology for independent service businesses.</h1>
+          <p className="eyebrow">ROCHESTER, MINNESOTA · WEBSITES & ONLINE TOOLS</p>
+          <h1>Practical websites and online tools for independent service businesses.</h1>
           <p className="lede">
             Clear websites, useful improvements, and ongoing support built around how a small business actually works.
             No unnecessary complexity, jargon, or constant upselling.
@@ -38,7 +38,7 @@ export default function HomePage() {
           <p className="panel-label">Built around real work</p>
           <div className="panel-row"><span>Web</span><strong>Clear, responsive customer experiences</strong></div>
           <div className="panel-row"><span>Care</span><strong>Maintenance and improvements that keep sites useful</strong></div>
-          <div className="panel-row"><span>Support</span><strong>Practical technology help without the runaround</strong></div>
+          <div className="panel-row"><span>Support</span><strong>Help with forms, Google tools, and online workflows</strong></div>
         </div>
       </section>
 
@@ -46,10 +46,10 @@ export default function HomePage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">WHAT PAWCIRCLE DOES</p>
-            <h2>Websites and technology built around the way your business works.</h2>
+            <h2>Websites and online tools built around the way your business works.</h2>
           </div>
           <p>
-            PawCircle LLC grew from running a real service business and building technology to solve real operating problems.
+            That can mean a new website, easier contact or quote forms, help with Google tools, simple automations, or connecting the online systems you already use.
           </p>
         </div>
         <div className="card-grid">
@@ -89,7 +89,7 @@ export default function HomePage() {
 
       <section className="cta shell">
         <p className="eyebrow">START SIMPLE</p>
-        <h2>Need a website, updates to an existing site, or help untangling a technology problem?</h2>
+        <h2>Need a website, updates to an existing site, or help with an online business task?</h2>
         <p>Tell me what you&apos;d like to build, update, or improve.</p>
         <Link className="button button-dark" href="/contact">Start a conversation</Link>
       </section>
