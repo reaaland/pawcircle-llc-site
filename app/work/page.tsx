@@ -111,7 +111,7 @@ export default function WorkPage() {
       </section>
 
       <section className="cta shell">
-        <p className="eyebrow">HAVE AN IDEA FOR A PROJECT?</p>
+        <p className="eyebrow">START A PROJECT</p>
         <h2>Have an idea for a project?</h2>
         <p>Tell me what you want to build, update, or improve and we can talk through the possibilities.</p>
         <Link className="button button-dark" href="/contact">Start a conversation</Link>
