@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "../lib/site";
 
-const routes = ["", "/services", "/routeledger", "/work", "/about", "/contact"];
+const routes = ["", "/services", "/work", "/about", "/contact"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
