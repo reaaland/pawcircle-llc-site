@@ -13,8 +13,8 @@ const services = [
   },
   {
     number: "03",
-    title: "Simple business tools",
-    body: "Practical software designed around real service-business workflows — starting with RouteLedger for mileage, income, expenses, and invoicing.",
+    title: "Practical technology help",
+    body: "Help untangling forms, Google tools, website workflows, integrations, and other small-business technology problems without unnecessary complexity.",
   },
 ];
 
@@ -24,21 +24,21 @@ export default function HomePage() {
       <section className="hero shell">
         <div className="hero-copy">
           <p className="eyebrow">ROCHESTER, MINNESOTA · SMALL-BUSINESS TECHNOLOGY</p>
-          <h1>Practical technology for independent service businesses.</h1>
+          <h1>Practical websites and technology for independent service businesses.</h1>
           <p className="lede">
-            Websites that help customers find you. Business tools that make the work easier.
+            Clear websites, useful improvements, and ongoing support built around how a small business actually works.
             No unnecessary complexity, jargon, or constant upselling.
           </p>
           <div className="actions">
             <Link className="button button-dark" href="/services">Explore services</Link>
-            <Link className="button button-light" href="/routeledger">Meet RouteLedger</Link>
+            <Link className="button button-light" href="/work">See selected work</Link>
           </div>
         </div>
         <div className="hero-panel" aria-label="PawCircle LLC focus areas">
           <p className="panel-label">Built around real work</p>
           <div className="panel-row"><span>Web</span><strong>Clear, responsive customer experiences</strong></div>
-          <div className="panel-row"><span>Tools</span><strong>Simple workflows for the back office</strong></div>
-          <div className="panel-row"><span>Support</span><strong>Ongoing help without the runaround</strong></div>
+          <div className="panel-row"><span>Care</span><strong>Maintenance and improvements that keep sites useful</strong></div>
+          <div className="panel-row"><span>Support</span><strong>Practical technology help without the runaround</strong></div>
         </div>
       </section>
 
@@ -46,7 +46,7 @@ export default function HomePage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">WHAT PAWCIRCLE DOES</p>
-            <h2>Less software friction. More useful technology.</h2>
+            <h2>Useful technology without making your business harder to run.</h2>
           </div>
           <p>
             PawCircle LLC grew from running a real service business and building technology to solve real operating problems.
@@ -63,28 +63,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="split-section">
-        <div className="shell split-grid">
-          <div>
-            <p className="eyebrow">PRODUCT IN DEVELOPMENT</p>
-            <h2>RouteLedger</h2>
-            <p className="lede-small">
-              A calm, low-friction business companion for mobile and solo service businesses — starting with calendar-connected mileage and expanding into expected income, expenses, and simple invoicing.
-            </p>
-            <Link className="text-link" href="/routeledger">See the product vision →</Link>
-          </div>
-          <div className="quote-card">
-            <p>“Open it. Record the work. Get your numbers. Leave.”</p>
-            <span>RouteLedger product principle</span>
-          </div>
-        </div>
-      </section>
-
       <section className="section shell">
         <div className="section-heading">
           <div>
             <p className="eyebrow">SELECTED WORK</p>
-            <h2>Built for real businesses.</h2>
+            <h2>Built for real businesses and real constraints.</h2>
           </div>
           <Link className="text-link" href="/work">View work →</Link>
         </div>
@@ -95,14 +78,9 @@ export default function HomePage() {
             <p>Responsive service-business website, gallery, quote flow, SEO, schema, performance tuning, and launch support.</p>
           </article>
           <article className="project-card">
-            <span>CLIENT WEBSITE</span>
-            <h3>Majerus Outdoor Services</h3>
-            <p>Website strategy and visual direction for a Rochester concrete and outdoor-services company. Build phase pending client selection.</p>
-          </article>
-          <article className="project-card">
-            <span>PRODUCT</span>
-            <h3>RouteLedger</h3>
-            <p>Calendar-connected mileage automation with review and duplicate prevention, expanding toward simple business financial tracking.</p>
+            <span>SOFTWARE DEVELOPMENT</span>
+            <h3>PawCircle Membership</h3>
+            <p>A production membership application built with React, Supabase, Stripe, authentication, role-based profiles, and payment workflows.</p>
           </article>
         </div>
       </section>
