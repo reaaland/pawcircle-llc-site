@@ -2,39 +2,46 @@
 
 import { FormEvent, useState } from "react";
 
-const BUSINESS_EMAIL = "pawcirclellc@gmail.com";
+type FormStatus = "idle" | "submitting" | "success" | "error";
 
 export function ContactForm() {
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState<FormStatus>("idle");
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const form = new FormData(event.currentTarget);
-    const name = String(form.get("name") ?? "").trim();
-    const email = String(form.get("email") ?? "").trim();
-    const business = String(form.get("business") ?? "").trim();
-    const message = String(form.get("message") ?? "").trim();
+    const form = event.currentTarget;
+    const data = new FormData(form);
 
-    const subject = encodeURIComponent(`PawCircle LLC project inquiry${business ? ` — ${business}` : ""}`);
-    const body = encodeURIComponent(
-      [
-        `Name: ${name}`,
-        `Email: ${email}`,
-        business ? `Business: ${business}` : "",
-        "",
-        message,
-      ]
-        .filter(Boolean)
-        .join("\n"),
-    );
+    setStatus("submitting");
 
-    setStatus("Opening your email app with the message ready to send.");
-    window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${subject}&body=${body}`;
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: String(data.get("name") ?? "").trim(),
+          email: String(data.get("email") ?? "").trim(),
+          business: String(data.get("business") ?? "").trim(),
+          website: String(data.get("website") ?? "").trim(),
+          message: String(data.get("message") ?? "").trim(),
+          companySite: String(data.get("companySite") ?? "").trim(),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("The contact request could not be sent.");
+      }
+
+      form.reset();
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
+    <form className="contact-form" onSubmit={handleSubmit} aria-busy={status === "submitting"}>
       <div className="form-grid">
         <label>
           Name
@@ -46,19 +53,47 @@ export function ContactForm() {
         </label>
       </div>
 
-      <label>
-        Business name <span className="optional">(optional)</span>
-        <input name="business" type="text" autoComplete="organization" />
-      </label>
+      <div className="form-grid">
+        <label>
+          Business name <span className="optional">(optional)</span>
+          <input name="business" type="text" autoComplete="organization" />
+        </label>
+        <label>
+          Current website <span className="optional">(optional)</span>
+          <input name="website" type="text" autoComplete="url" />
+        </label>
+      </div>
 
       <label>
         Project details
-        <textarea name="message" rows={7} required />
+        <textarea
+          name="message"
+          rows={7}
+          maxLength={5000}
+          placeholder="What would you like to build, update, or improve?"
+          required
+        />
       </label>
 
-      <button className="button button-dark" type="submit">Prepare email</button>
-      <p className="form-note">This opens your email app with your message filled in and ready to send.</p>
-      {status ? <p className="form-status" role="status">{status}</p> : null}
+      <label
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}
+      >
+        Leave this field empty
+        <input name="companySite" type="text" autoComplete="off" tabIndex={-1} />
+      </label>
+
+      {status === "success" ? (
+        <p className="form-status" role="status">Thanks — your message was sent.</p>
+      ) : null}
+
+      {status === "error" ? (
+        <p className="form-status" role="alert">The message could not be sent. Please try again in a moment.</p>
+      ) : null}
+
+      <button className="button button-dark" type="submit" disabled={status === "submitting"}>
+        {status === "submitting" ? "Sending…" : "Send project inquiry"}
+      </button>
     </form>
   );
 }
