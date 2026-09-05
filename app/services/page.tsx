@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Website Services & Support",
   alternates: { canonical: "/services" },
 };
 
@@ -10,20 +10,37 @@ export default function ServicesPage() {
   return (
     <main className="shell page-shell">
       <p className="eyebrow">SERVICES</p>
-      <h1>Practical web help for real business needs.</h1>
-      <p className="lede page-lede">PawCircle focuses on useful outcomes: a clearer website, a better customer path, easier maintenance, and online tools that do not create more work than they save.</p>
+      <h1>Website help that fits what your business actually needs.</h1>
+      <p className="lede page-lede">
+        Whether you need a new website, a better version of the one you already have, or ongoing help after launch, I focus on useful improvements without adding complexity just for the sake of it.
+      </p>
 
       <div className="detail-grid">
-        <article className="detail-card"><h2>New websites</h2><p>Responsive small-business websites with clear services, strong calls to action, contact or quote flows, real photos, and a structure that works well on phones.</p></article>
-        <article className="detail-card"><h2>Website improvements</h2><p>Focused fixes for mobile layout, navigation, forms, accessibility, content organization, performance, gallery presentation, and visual consistency.</p></article>
-        <article className="detail-card"><h2>SEO & launch basics</h2><p>Page metadata, sitemap and robots setup, structured data where appropriate, Google indexing support, and practical launch checks.</p></article>
-        <article className="detail-card"><h2>Ongoing maintenance</h2><p>Monthly care options for small content changes, form checks, link checks, routine updates, and selected improvements without constant sales pressure.</p></article>
+        <article className="detail-card">
+          <h2>New websites</h2>
+          <p>Small-business websites with clear services, strong calls to action, contact or quote forms, real photos, and layouts that work well on phones, tablets, and computers.</p>
+        </article>
+        <article className="detail-card">
+          <h2>Improve an existing website</h2>
+          <p>Focused improvements to mobile layout, navigation, forms, content organization, speed, accessibility, galleries, or the overall look and feel. If your current website can still do the job, I will not recommend rebuilding it just because I can.</p>
+        </article>
+        <article className="detail-card">
+          <h2>SEO, Google & launch setup</h2>
+          <p>Page titles and descriptions, sitemap setup, Google indexing help, behind-the-scenes search information when useful, and final checks before launch. Larger projects can also include Google tools or integrations when the business needs them.</p>
+        </article>
+        <article className="detail-card">
+          <h2>Ongoing website care</h2>
+          <p>Monthly help with content changes, form and link checks, routine updates, small improvements, and questions after launch without constant sales pressure.</p>
+        </article>
       </div>
 
       <section className="inline-cta">
-        <h2>Not sure what you need?</h2>
-        <p>That is okay. Start with the business problem, not a technical shopping list.</p>
-        <Link className="button button-dark" href="/contact">Tell me what is not working</Link>
+        <h2>Want to know the likely cost first?</h2>
+        <p>You can see starting prices before you send an inquiry. If you are not sure which category fits, describe the business problem and I can help sort that out by email.</p>
+        <div className="actions">
+          <Link className="button button-dark" href="/pricing">See starting prices</Link>
+          <Link className="button button-light" href="/contact">Request a written estimate</Link>
+        </div>
       </section>
     </main>
   );
