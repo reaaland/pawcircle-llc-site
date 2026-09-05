@@ -2,15 +2,15 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Minnlawn Case Study",
+  title: "Minnlawn Website Case Study",
   alternates: { canonical: "/work/minnlawn" },
 };
 
 const highlights = [
-  ["01", "Responsive rebuild", "Reorganized the site around customer questions, service discovery, and mobile use."],
-  ["02", "Seasonal automation", "Built an In Service Now section that rotates seasonal offerings automatically by calendar month."],
-  ["03", "Lead generation", "Improved calls to action, quote flow, service content, and gallery presentation to support inquiries."],
-  ["04", "SEO & performance", "Added SEO/schema work, indexing support, and performance tuning before launch."],
+  ["01", "Responsive rebuild", "Reorganized the site around customer questions, service discovery, and easy use on phones and computers."],
+  ["02", "Seasonal automation", "Built an In Service Now section that changes seasonal offerings automatically by calendar month."],
+  ["03", "Quote & customer path", "Improved calls to action, quote flow, service content, and gallery presentation to make it easier for customers to take the next step."],
+  ["04", "Google, SEO & performance", "Set up Google review integration and Google Cloud/API access, added search and schema work, supported indexing, and tested performance before launch."],
 ] as const;
 
 export default function MinnlawnCaseStudyPage() {
@@ -20,7 +20,7 @@ export default function MinnlawnCaseStudyPage() {
         <p className="eyebrow">CASE STUDY · MINNLAWN LAWN & LANDSCAPE</p>
         <h1>Moving beyond the limits of a template.</h1>
         <p className="lede page-lede">
-          Minnlawn already had a functioning website and steady traffic, but the GoDaddy template system limited how clearly the business could present its services, seasonal work, projects, and quote process.
+          Minnlawn already had a functioning website and steady traffic, but the GoDaddy template system limited the design, features, and changes the business wanted to make. The project became a full custom rebuild rather than a simple refresh.
         </p>
         <div className="actions">
           <a className="button button-dark" href="https://minnlawn.com" target="_blank" rel="noreferrer">
@@ -34,10 +34,10 @@ export default function MinnlawnCaseStudyPage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">THE PROJECT</p>
-            <h2>A complete rebuild focused on clarity, trust, and easier customer action.</h2>
+            <h2>A complete rebuild with more going on behind the scenes.</h2>
           </div>
           <p>
-            The work covered structure, design, responsive development, seasonal content, quote functionality, SEO, performance, and launch support.
+            In addition to the design and page build, the project included seasonal site logic, quote functionality, Google review integration and Google Cloud/API setup, SEO and schema work, sitemap and robots setup, performance testing, and domain and hosting transition support.
           </p>
         </div>
 
@@ -85,10 +85,13 @@ export default function MinnlawnCaseStudyPage() {
       </section>
 
       <section className="cta shell">
-        <p className="eyebrow">START A PROJECT</p>
-        <h2>Have an idea for your website?</h2>
-        <p>Tell me what you want your site to do better and we can start there.</p>
-        <Link className="button button-dark" href="/contact">Start a conversation</Link>
+        <p className="eyebrow">PROJECT SCOPE & PRICING</p>
+        <h2>Why would a project like Minnlawn cost more than a simple website?</h2>
+        <p>The pricing page breaks down what is included at different project levels and why custom features, integrations, search work, and launch support add to the scope.</p>
+        <div className="actions">
+          <Link className="button button-dark" href="/pricing">See pricing</Link>
+          <Link className="button button-light" href="/contact">Request a written estimate</Link>
+        </div>
       </section>
     </main>
   );
