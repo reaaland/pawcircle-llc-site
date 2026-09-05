@@ -3,6 +3,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Client Work & Case Studies",
+  description:
+    "See PawCircle LLC website and software case studies, including a custom Minnlawn rebuild and the PawCircle Membership product.",
   alternates: { canonical: "/work" },
 };
 
