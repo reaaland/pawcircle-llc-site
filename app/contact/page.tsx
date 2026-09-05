@@ -4,6 +4,8 @@ import { ContactForm } from "../../components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Request a Project Estimate",
+  description:
+    "Request a written website estimate from PawCircle LLC. Share your project, budget, and timing by email — no phone call required to get started.",
   alternates: { canonical: "/contact" },
 };
 
