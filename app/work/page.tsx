@@ -13,7 +13,7 @@ const minnLawnHighlights = [
 export default function WorkPage() {
   return (
     <main>
-      <section className="shell page-shell">
+      <section className="shell page-shell" style={{ paddingBottom: "46px" }}>
         <p className="eyebrow">WORK</p>
         <h1>Real projects, real constraints, useful outcomes.</h1>
         <p className="lede page-lede">
@@ -21,7 +21,7 @@ export default function WorkPage() {
         </p>
       </section>
 
-      <section className="section shell">
+      <section className="section shell" style={{ paddingTop: "46px" }}>
         <div className="section-heading">
           <div>
             <p className="eyebrow">CASE STUDY · MINNLAWN LAWN & LANDSCAPE</p>
