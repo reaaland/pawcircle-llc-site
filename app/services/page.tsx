@@ -8,7 +8,7 @@ export default function ServicesPage() {
     <main className="shell page-shell">
       <p className="eyebrow">SERVICES</p>
       <h1>Practical web help for real business needs.</h1>
-      <p className="lede page-lede">PawCircle focuses on useful outcomes: a clearer website, a better customer path, easier maintenance, and technology that does not create more work than it saves.</p>
+      <p className="lede page-lede">PawCircle focuses on useful outcomes: a clearer website, a better customer path, easier maintenance, and online tools that do not create more work than they save.</p>
 
       <div className="detail-grid">
         <article className="detail-card"><h2>New websites</h2><p>Responsive small-business websites with clear services, strong calls to action, contact or quote flows, real photos, and a structure that works well on phones.</p></article>
