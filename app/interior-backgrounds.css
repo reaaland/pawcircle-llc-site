@@ -1,0 +1,22 @@
+.page-shell {
+  position: relative;
+}
+
+.page-shell::before {
+  content: "";
+  position: absolute;
+  inset: 30px -30px 28px;
+  z-index: 0;
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 84% 24%, rgba(49, 92, 255, .18), transparent 32%),
+    radial-gradient(circle at 72% 78%, rgba(88, 201, 255, .10), transparent 28%),
+    linear-gradient(180deg, rgba(255,255,255,.86), rgba(239,243,252,.7));
+  border: 1px solid rgba(49, 92, 255, .08);
+  pointer-events: none;
+}
+
+.page-shell > * {
+  position: relative;
+  z-index: 1;
+}
