@@ -3,6 +3,9 @@ type ContactRequest = {
   email?: unknown;
   business?: unknown;
   website?: unknown;
+  projectType?: unknown;
+  budget?: unknown;
+  timeline?: unknown;
   message?: unknown;
   companySite?: unknown;
 };
@@ -33,9 +36,12 @@ export async function POST(request: Request) {
   const email = clean(body.email, 254).toLowerCase();
   const business = clean(body.business, 150);
   const website = clean(body.website, 500);
+  const projectType = clean(body.projectType, 150);
+  const budget = clean(body.budget, 100);
+  const timeline = clean(body.timeline, 150);
   const message = clean(body.message, 5000);
 
-  if (!name || !emailPattern.test(email) || !message) {
+  if (!name || !emailPattern.test(email) || !projectType || !budget || !message) {
     return Response.json(
       { error: "Please complete the required fields." },
       { status: 400 },
@@ -57,6 +63,9 @@ export async function POST(request: Request) {
     `Email: ${email}`,
     business ? `Business: ${business}` : "",
     website ? `Website: ${website}` : "",
+    `Project type: ${projectType}`,
+    `Budget: ${budget}`,
+    timeline ? `Timing: ${timeline}` : "",
     "",
     "Project details:",
     message,
