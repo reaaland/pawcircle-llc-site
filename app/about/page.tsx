@@ -13,7 +13,7 @@ export default function AboutPage() {
           <p>That experience led to building software, websites, and better workflows — first for PawCircle, then for other service businesses.</p>
         </div>
         <div>
-          <p>Today, PawCircle LLC is becoming a broader small-business technology company: professional websites, ongoing web support, and simple tools such as RouteLedger.</p>
+          <p>Today, PawCircle LLC focuses on professional small-business websites, ongoing website care, focused improvements, and practical technology help for independent service businesses.</p>
           <p>The goal is not to make technology feel impressive. The goal is to make it useful, understandable, and easier to live with.</p>
         </div>
       </div>
