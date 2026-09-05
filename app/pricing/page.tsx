@@ -67,7 +67,7 @@ const existingSiteOptions = [
   {
     title: "Website Care",
     price: "$99/month",
-    text: "For businesses that want ongoing help with content changes, routine checks, small improvements, and questions after launch.",
+    text: "For businesses that want ongoing help with content changes, routine checks, small improvements, and questions after launch. Larger changes are quoted separately.",
   },
   {
     title: "Full Website Rebuild",
@@ -126,7 +126,7 @@ export default function PricingPage() {
         <p className="eyebrow">PRICING</p>
         <h1>Clear starting prices before you reach out.</h1>
         <p className="lede page-lede">
-          I want you to have a realistic idea of cost before we spend time discussing a project. These are starting prices, not surprise-free-for-all estimates. Once I understand what you need, I will give you a written scope and price before work begins.
+          I want you to have a realistic idea of cost before we spend time discussing a project. These are starting prices, so the final price depends on what your project actually needs. Once I understand the scope, I will give you a written price before work begins.
         </p>
       </section>
 
@@ -162,10 +162,13 @@ export default function PricingPage() {
             <p className="eyebrow">WHY SOME PROJECTS COST MORE</p>
             <h2>Minnlawn is a good example of a Custom Business Website.</h2>
             <p className="lede-small">
-              Minnlawn already had a website, but the rebuild involved much more than changing the look. The project included service restructuring, seasonal content that changes automatically, quote functionality, Google review integration and Google Cloud/API setup, SEO and schema work, sitemap and robots setup, performance testing, and domain and hosting transition support.
+              Minnlawn already had a website, but the rebuild involved much more than changing the look. The project included service restructuring, seasonal content that changes automatically, quote functionality, Google review integration and Google Cloud/API setup, SEO and behind-the-scenes search setup including schema, sitemap, and robots files, performance testing, and domain and hosting transition support.
             </p>
             <p className="lede-small">
               Those extra layers of planning, setup, testing, and custom work are what move a project into the higher price range.
+            </p>
+            <p className="lede-small">
+              As I complete more client projects, I will add examples here so you can compare different project sizes and see what moved them into each price range.
             </p>
             <div className="actions">
               <Link className="button button-light" href="/work/minnlawn">See the Minnlawn case study</Link>
