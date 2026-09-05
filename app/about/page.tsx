@@ -26,9 +26,9 @@ export default function AboutPage() {
     <main className="shell page-shell">
       <section style={{ maxWidth: "980px" }}>
         <p className="eyebrow">ABOUT PAWCIRCLE LLC</p>
-        <h1>Technology built with small businesses in mind.</h1>
+        <h1>Websites and online tools built with small businesses in mind.</h1>
         <p className="lede page-lede">
-          PawCircle LLC is a Rochester, Minnesota web and technology business founded by Rebecca Aaland. I build professional websites, improve existing sites, and help independent service businesses solve practical technology problems without adding unnecessary complexity.
+          PawCircle LLC is a Rochester, Minnesota web business founded by Rebecca Aaland. I build professional websites, improve existing sites, and help independent service businesses make their online tools work better without adding unnecessary complexity.
         </p>
       </section>
 
@@ -47,10 +47,10 @@ export default function AboutPage() {
             PawCircle grew out of real small-business experience.
           </h2>
           <p>
-            I originally started PawCircle as a local pet-care business. Running it gave me a close-up view of what small service businesses deal with every day: serving clients, managing schedules, maintaining a professional online presence, and trying to make technology useful without letting it take over the work.
+            I originally started PawCircle as a local pet-care business. Running it gave me a close-up view of what small service businesses deal with every day: serving clients, managing schedules, maintaining a professional online presence, and trying to make online tools useful without letting them take over the work.
           </p>
           <p>
-            At the same time, I moved deeper into frontend development and began building websites and software of my own. That combination — operating a service business and building technology — became the foundation for what PawCircle LLC is today.
+            At the same time, I moved deeper into frontend development and began building websites and software of my own. That combination — operating a service business and building practical online tools — became the foundation for what PawCircle LLC is today.
           </p>
         </article>
 
@@ -76,7 +76,7 @@ export default function AboutPage() {
             </p>
           </div>
           <p style={{ color: "#9eabc0", margin: 0 }}>
-            Teaching shaped how I work with technology: break complicated things into clear pieces, explain the why, and never assume someone else&apos;s “simple” is the same as mine.
+            Teaching shaped how I approach this work: break complicated things into clear pieces, explain the why, and never assume someone else&apos;s “simple” is the same as mine.
           </p>
         </aside>
       </section>
