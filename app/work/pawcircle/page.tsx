@@ -1,7 +1,10 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "PawCircle Membership Case Study" };
+export const metadata: Metadata = {
+  title: "PawCircle Membership Case Study",
+  alternates: { canonical: "/work/pawcircle" },
+};
 
 const highlights = [
   ["01", "Product planning", "Defined the membership experience, user roles, account flows, and launch requirements."],
@@ -55,7 +58,7 @@ export default function PawCircleCaseStudyPage() {
             <p className="eyebrow">WHY IT MATTERS</p>
             <h2>Built around a real operating problem.</h2>
             <p className="lede-small">
-              The project reflects how I approach client work today: understand the business need first, then build the technology around that need instead of adding complexity for its own sake.
+              The project reflects how I approach client work today: understand the business need first, then build the solution around that need instead of adding complexity for its own sake.
             </p>
           </div>
           <div className="quote-card">
