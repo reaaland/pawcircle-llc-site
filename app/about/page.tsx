@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About PawCircle LLC",
   alternates: { canonical: "/about" },
 };
 
@@ -14,13 +14,18 @@ const principles = [
   },
   {
     number: "02",
-    title: "Design around your business",
-    body: "Your website should reflect the way your business actually works and feel like your business — not a recycled template.",
+    title: "See ideas before the build",
+    body: "For Small Business and Custom projects, I create visual website concepts so you can compare directions before development begins.",
   },
   {
     number: "03",
-    title: "Build for real use",
-    body: "Responsive design, clear navigation, useful content, performance, accessibility, and the features your customers actually need.",
+    title: "Build around your business",
+    body: "The site should reflect how your business actually works, be easy to use on phones and computers, and give customers a clear next step.",
+  },
+  {
+    number: "04",
+    title: "Review at key stages",
+    body: "You review the important decisions and give feedback at defined checkpoints while I handle the design, development, and technical details.",
   },
 ] as const;
 
@@ -29,9 +34,9 @@ export default function AboutPage() {
     <main className="shell page-shell">
       <section style={{ maxWidth: "980px" }}>
         <p className="eyebrow">ABOUT PAWCIRCLE LLC</p>
-        <h1>Websites and online tools built with small businesses in mind.</h1>
+        <h1>A small web business built around practical help and clear communication.</h1>
         <p className="lede page-lede">
-          PawCircle LLC is a Rochester, Minnesota web business founded by Rebecca Aaland. I build professional websites, improve existing sites, and help independent service businesses make their online tools work better without adding unnecessary complexity.
+          PawCircle LLC is a Rochester, Minnesota web business founded by Rebecca Aaland. I build professional websites, improve existing sites, and help independent service businesses make their online tools work better without making the process harder than it needs to be.
         </p>
       </section>
 
@@ -53,7 +58,7 @@ export default function AboutPage() {
             I originally started PawCircle as a local pet-care business. Running it gave me a close-up view of what small service businesses deal with every day: serving clients, managing schedules, maintaining a professional online presence, and trying to make online tools useful without letting them take over the work.
           </p>
           <p>
-            At the same time, I moved deeper into frontend development and began building websites and software of my own. That combination — operating a service business and building practical online tools — became the foundation for what PawCircle LLC is today.
+            At the same time, I moved deeper into web development and began building websites and software of my own. That combination — operating a service business and building practical online tools — became the foundation for what PawCircle LLC is today.
           </p>
         </article>
 
@@ -79,7 +84,7 @@ export default function AboutPage() {
             </p>
           </div>
           <p style={{ color: "#9eabc0", margin: 0 }}>
-            Teaching shaped how I approach this work: break complicated things into clear pieces, explain the why, and never assume someone else&apos;s “simple” is the same as mine.
+            Teaching shaped how I approach this work: break complicated things into clear pieces, explain why something matters, and never assume someone else&apos;s “simple” is the same as mine.
           </p>
         </aside>
       </section>
@@ -91,11 +96,11 @@ export default function AboutPage() {
             <h2>What is your vision for your website?</h2>
           </div>
           <p>
-            I start by understanding what you want the site to communicate, how you want customers to use it, and what success should look like for your business.
+            I start by understanding what you want the site to communicate, how you want customers to use it, and what success should look like for your business. We collaborate at the important decision points, without making you manage the technical work.
           </p>
         </div>
 
-        <div className="card-grid">
+        <div className="detail-grid" style={{ marginTop: 0 }}>
           {principles.map((principle) => (
             <article className="service-card" key={principle.number}>
               <span>{principle.number}</span>
@@ -108,9 +113,12 @@ export default function AboutPage() {
 
       <section className="cta" style={{ marginTop: "20px" }}>
         <p className="eyebrow">WORK WITH PAWCIRCLE</p>
-        <h2>Have an idea for a project?</h2>
-        <p>Tell me what you&apos;re thinking about building or improving, and we can start there.</p>
-        <Link className="button button-dark" href="/contact">Start a conversation</Link>
+        <h2>Want to see how the process and pricing work before you reach out?</h2>
+        <p>Start with the pricing page, then send the project details when you are ready.</p>
+        <div className="actions">
+          <Link className="button button-dark" href="/pricing">See pricing & process</Link>
+          <Link className="button button-light" href="/contact">Request a written estimate</Link>
+        </div>
       </section>
     </main>
   );
