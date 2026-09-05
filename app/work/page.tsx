@@ -3,17 +3,10 @@ import Link from "next/link";
 
 export const metadata: Metadata = { title: "Work" };
 
-const minnLawnHighlights = [
-  ["01", "Responsive rebuild", "A clearer, modern site structure designed around real customer questions and mobile use."],
-  ["02", "Seasonal automation", "An In Service Now section that rotates seasonal offerings automatically by calendar month."],
-  ["03", "Lead flow", "Quote functionality, gallery presentation, calls to action, and service content built to turn visits into inquiries."],
-  ["04", "Search & performance", "SEO/schema work, indexing support, performance tuning, and near-perfect post-launch site-health scores."],
-] as const;
-
 export default function WorkPage() {
   return (
     <main>
-      <section className="shell page-shell" style={{ paddingBottom: "24px" }}>
+      <section className="shell page-shell" style={{ paddingBottom: "34px" }}>
         <p className="eyebrow">WORK</p>
         <h1>Real projects, real constraints, useful outcomes.</h1>
         <p className="lede page-lede">
@@ -21,98 +14,48 @@ export default function WorkPage() {
         </p>
       </section>
 
-      <section className="section shell" style={{ paddingTop: "24px" }}>
-        <div className="section-heading" style={{ marginBottom: "32px" }}>
-          <div>
-            <p className="eyebrow">CASE STUDY · MINNLAWN LAWN & LANDSCAPE</p>
-            <h2>Turning an outdated website into a working business asset.</h2>
-          </div>
-          <div>
-            <p>
-              Minnlawn came in with decent website traffic but weak lead generation, limited search visibility, and a site that no longer reflected the business.
-            </p>
-            <div className="actions" style={{ marginTop: "22px" }}>
-              <Link className="button button-dark" href="/work/minnlawn">Read case study</Link>
-              <a className="button button-light" href="https://minnlawn.com" target="_blank" rel="noreferrer">
-                Visit Minnlawn site
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="route-flow" style={{ marginTop: "36px" }}>
-          {minnLawnHighlights.map(([number, title, description]) => (
-            <div key={number}>
-              <span>{number}</span>
-              <strong>{title}</strong>
-              <p>{description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="split-section">
-        <div className="shell split-grid">
-          <div>
-            <p className="eyebrow">CLIENT FEEDBACK</p>
-            <h2>“The site is now a powerful asset for my business.”</h2>
-            <p className="lede-small">
-              The finished site combined custom design, seasonal functionality, a stronger quote path, SEO and schema work, performance tuning, and a guided domain-and-host transition.
-            </p>
-            <div className="actions">
-              <Link className="button button-light" href="/work/minnlawn">View the full Minnlawn case study</Link>
-            </div>
-          </div>
-          <blockquote className="quote-card">
-            <p>
-              “My website was in desperate need of a complete overhaul. It was plain, disjointed, and actively costing me potential clients. Rebecca stepped in as an absolute superhero and completely transformed my online presence into something far better than I could have imagined on my own.”
-            </p>
-            <p>
-              “She was remarkably attentive to my goals, especially when building out the site&apos;s functionality, like creating a dynamic ‘In Service Now’ section that automatically rotates seasonal offerings based on the calendar month.”
-            </p>
-            <p>
-              “When it came time to launch, she provided clear, step-by-step instructions for the domain and host transition. Her guidance made the entire process quick, stress-free, and seamless.”
-            </p>
-            <span>— Yohan, Minnlawn Lawn & Landscape</span>
-          </blockquote>
-        </div>
-      </section>
-
-      <section className="section shell">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">SOFTWARE DEVELOPMENT</p>
-            <h2>PawCircle Membership</h2>
-          </div>
-          <p>
-            A production membership application built with React, Supabase/PostgreSQL, Stripe, authentication, role-based profiles, privacy controls, and payment workflows.
+      <section className="section shell" style={{ paddingTop: "34px", paddingBottom: "58px" }}>
+        <article className="detail-card" style={{ padding: "42px" }}>
+          <p className="eyebrow">CLIENT WEBSITE · MINNLAWN LAWN & LANDSCAPE</p>
+          <h2 style={{ fontSize: "clamp(2.2rem, 4.5vw, 4rem)", margin: "18px 0" }}>
+            Turning an outdated website into a stronger business asset.
+          </h2>
+          <p className="lede-small">
+            Minnlawn&apos;s rebuild included responsive design, clearer service paths, a project gallery, quote functionality, seasonal automation, SEO/schema work, performance tuning, and launch support.
           </p>
-        </div>
+          <blockquote style={{ margin: "30px 0 0", padding: "24px 0 0", borderTop: "1px solid var(--line)" }}>
+            <p style={{ fontSize: "1.28rem", lineHeight: 1.45, margin: 0 }}>
+              “The site is now a powerful asset for my business, and I will definitely continue working with Rebecca to scale it as my company grows.”
+            </p>
+            <span style={{ display: "block", marginTop: "12px", color: "var(--muted)" }}>
+              — Yohan, Minnlawn Lawn & Landscape
+            </span>
+          </blockquote>
+          <div className="actions">
+            <Link className="button button-dark" href="/work/minnlawn">Read Minnlawn case study</Link>
+            <a className="button button-light" href="https://minnlawn.com" target="_blank" rel="noreferrer">
+              Visit Minnlawn website
+            </a>
+          </div>
+        </article>
+      </section>
 
-        <div className="project-grid">
-          <Link className="project-card" href="/work/pawcircle" aria-label="Read the PawCircle Membership case study">
-            <span>CASE STUDY</span>
-            <h3>From idea to production</h3>
-            <p>
-              See the product story, technical decisions, and development work behind taking PawCircle Membership from concept through production.
-            </p>
-            <strong style={{ marginTop: "24px" }}>Read case study →</strong>
-          </Link>
-          <a
-            className="project-card"
-            href="https://www.pawcirclemembership.com"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="View the PawCircle Membership live project"
-          >
-            <span>LIVE PROJECT</span>
-            <h3>See the production application</h3>
-            <p>
-              View the deployed membership experience built with React, Supabase, Stripe, authentication, profiles, and payment workflows.
-            </p>
-            <strong style={{ marginTop: "24px" }}>View live project →</strong>
-          </a>
-        </div>
+      <section className="section shell" style={{ paddingTop: "18px", paddingBottom: "70px" }}>
+        <article className="detail-card" style={{ padding: "42px" }}>
+          <p className="eyebrow">SOFTWARE DEVELOPMENT · PAWCIRCLE MEMBERSHIP</p>
+          <h2 style={{ fontSize: "clamp(2.2rem, 4.5vw, 4rem)", margin: "18px 0" }}>
+            From business idea to a production membership application.
+          </h2>
+          <p className="lede-small">
+            A full-stack membership product built with React, Supabase/PostgreSQL, Stripe, authentication, role-based profiles, privacy controls, payment workflows, and Vercel deployment.
+          </p>
+          <div className="actions">
+            <Link className="button button-dark" href="/work/pawcircle">Read PawCircle case study</Link>
+            <a className="button button-light" href="https://www.pawcirclemembership.com" target="_blank" rel="noreferrer">
+              View live project
+            </a>
+          </div>
+        </article>
       </section>
 
       <section className="cta shell">
