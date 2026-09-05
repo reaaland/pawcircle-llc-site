@@ -70,10 +70,13 @@ export default function PawCircleCaseStudyPage() {
       </section>
 
       <section className="cta shell">
-        <p className="eyebrow">START A PROJECT</p>
-        <h2>Have an idea for a project?</h2>
-        <p>Tell me what you want to build, update, or improve and we can talk through the possibilities.</p>
-        <Link className="button button-dark" href="/contact">Start a conversation</Link>
+        <p className="eyebrow">START WITH THE SCOPE</p>
+        <h2>Have something more custom in mind?</h2>
+        <p>See the starting prices for website work, or send the project details if your idea does not fit neatly into one category.</p>
+        <div className="actions">
+          <Link className="button button-dark" href="/pricing">See pricing</Link>
+          <Link className="button button-light" href="/contact">Request a written estimate</Link>
+        </div>
       </section>
     </main>
   );
