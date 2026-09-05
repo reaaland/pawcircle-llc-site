@@ -15,9 +15,9 @@ export default function MinnlawnCaseStudyPage() {
     <main>
       <section className="shell page-shell" style={{ paddingBottom: "54px" }}>
         <p className="eyebrow">CASE STUDY · MINNLAWN LAWN & LANDSCAPE</p>
-        <h1>Turning an outdated website into a stronger business asset.</h1>
+        <h1>Moving beyond the limits of a template.</h1>
         <p className="lede page-lede">
-          Minnlawn had traffic, but the existing site was not converting that attention into enough leads and did not reflect the quality of the business.
+          Minnlawn already had a functioning website and steady traffic, but the GoDaddy template system limited how clearly the business could present its services, seasonal work, projects, and quote process.
         </p>
         <div className="actions">
           <a className="button button-dark" href="https://minnlawn.com" target="_blank" rel="noreferrer">
