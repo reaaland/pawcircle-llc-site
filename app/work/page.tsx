@@ -13,7 +13,7 @@ const minnLawnHighlights = [
 export default function WorkPage() {
   return (
     <main>
-      <section className="shell page-shell" style={{ paddingBottom: "46px" }}>
+      <section className="shell page-shell" style={{ paddingBottom: "24px" }}>
         <p className="eyebrow">WORK</p>
         <h1>Real projects, real constraints, useful outcomes.</h1>
         <p className="lede page-lede">
@@ -21,18 +21,26 @@ export default function WorkPage() {
         </p>
       </section>
 
-      <section className="section shell" style={{ paddingTop: "46px" }}>
-        <div className="section-heading">
+      <section className="section shell" style={{ paddingTop: "24px" }}>
+        <div className="section-heading" style={{ marginBottom: "32px" }}>
           <div>
             <p className="eyebrow">CASE STUDY · MINNLAWN LAWN & LANDSCAPE</p>
             <h2>Turning an outdated website into a working business asset.</h2>
           </div>
-          <p>
-            Minnlawn came in with decent website traffic but weak lead generation, limited search visibility, and a site that no longer reflected the business.
-          </p>
+          <div>
+            <p>
+              Minnlawn came in with decent website traffic but weak lead generation, limited search visibility, and a site that no longer reflected the business.
+            </p>
+            <div className="actions" style={{ marginTop: "22px" }}>
+              <Link className="button button-dark" href="/work/minnlawn">Read case study</Link>
+              <a className="button button-light" href="https://minnlawn.com" target="_blank" rel="noreferrer">
+                Visit Minnlawn site
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div className="route-flow">
+        <div className="route-flow" style={{ marginTop: "36px" }}>
           {minnLawnHighlights.map(([number, title, description]) => (
             <div key={number}>
               <span>{number}</span>
@@ -51,6 +59,9 @@ export default function WorkPage() {
             <p className="lede-small">
               The finished site combined custom design, seasonal functionality, a stronger quote path, SEO and schema work, performance tuning, and a guided domain-and-host transition.
             </p>
+            <div className="actions">
+              <Link className="button button-light" href="/work/minnlawn">View the full Minnlawn case study</Link>
+            </div>
           </div>
           <blockquote className="quote-card">
             <p>
@@ -79,6 +90,14 @@ export default function WorkPage() {
         </div>
 
         <div className="project-grid">
+          <Link className="project-card" href="/work/pawcircle" aria-label="Read the PawCircle Membership case study">
+            <span>CASE STUDY</span>
+            <h3>From idea to production</h3>
+            <p>
+              See the product story, technical decisions, and development work behind taking PawCircle Membership from concept through production.
+            </p>
+            <strong style={{ marginTop: "24px" }}>Read case study →</strong>
+          </Link>
           <a
             className="project-card"
             href="https://www.pawcirclemembership.com"
@@ -86,26 +105,12 @@ export default function WorkPage() {
             rel="noreferrer"
             aria-label="View the PawCircle Membership live project"
           >
-            <span>FULL-STACK PRODUCT</span>
-            <h3>From idea to production</h3>
+            <span>LIVE PROJECT</span>
+            <h3>See the production application</h3>
             <p>
-              Product planning, frontend development, authentication, payments, profile systems, database work, deployment, and launch troubleshooting.
+              View the deployed membership experience built with React, Supabase, Stripe, authentication, profiles, and payment workflows.
             </p>
             <strong style={{ marginTop: "24px" }}>View live project →</strong>
-          </a>
-          <a
-            className="project-card"
-            href="https://rebeccaaaland.com/work/pawcircle"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Read the PawCircle Membership case study"
-          >
-            <span>CASE STUDY</span>
-            <h3>How the product was built</h3>
-            <p>
-              See the development story, technical decisions, and lessons behind taking PawCircle Membership from concept through production.
-            </p>
-            <strong style={{ marginTop: "24px" }}>Read the case study →</strong>
           </a>
         </div>
       </section>
