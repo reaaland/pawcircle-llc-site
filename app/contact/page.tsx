@@ -1,18 +1,22 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { ContactForm } from "../../components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Request a Project Estimate",
   alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {
   return (
     <main className="shell page-shell">
-      <p className="eyebrow">CONTACT</p>
-      <h1>Let&apos;s talk about your project.</h1>
+      <p className="eyebrow">PROJECT INQUIRY</p>
+      <h1>Tell me what you need, and I&apos;ll start with a written response.</h1>
       <p className="lede page-lede">
-        Tell me a little about your business, what you would like to build or improve, and any timeline you have in mind.
+        No phone call is required to get started. Share the basics about your business, what you want to build or improve, your budget range, and your timing. I&apos;ll review it and respond by email with questions or a next step.
+      </p>
+      <p style={{ marginTop: "22px" }}>
+        Not sure what your budget should be? <Link className="text-link" href="/pricing"><strong>See starting prices first →</strong></Link>
       </p>
 
       <section
