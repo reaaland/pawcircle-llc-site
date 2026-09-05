@@ -55,10 +55,10 @@ export default function MinnlawnCaseStudyPage() {
       <section className="split-section">
         <div className="shell split-grid">
           <div>
-            <p className="eyebrow">CLIENT FEEDBACK</p>
+            <p className="eyebrow">FULL TESTIMONIAL</p>
             <h2>“The site is now a powerful asset for my business.”</h2>
             <p className="lede-small">
-              Yohan specifically highlighted the seasonal functionality, performance improvements, and the step-by-step support through the domain and host transition.
+              Yohan shared this feedback after the redesign, performance work, SEO improvements, and launch were complete.
             </p>
             <div className="actions">
               <a className="button button-light" href="https://minnlawn.com" target="_blank" rel="noreferrer">
@@ -68,13 +68,16 @@ export default function MinnlawnCaseStudyPage() {
           </div>
           <blockquote className="quote-card">
             <p>
-              “My website was in desperate need of a complete overhaul. It was plain, disjointed, and actively costing me potential clients. Rebecca stepped in as an absolute superhero and completely transformed my online presence into something far better than I could have imagined on my own.”
+              “My website was in desperate need of a complete overhaul. It was plain, disjointed, and actively costing me potential clients. While my monthly visitor metrics showed decent traffic, the actual leads coming through were minimal, and a total lack of SEO data meant my Google search rankings were taking a heavy hit.
             </p>
             <p>
-              “She was remarkably attentive to my goals, especially when building out the site&apos;s functionality, like creating a dynamic ‘In Service Now’ section that automatically rotates seasonal offerings based on the calendar month.”
+              Rebecca stepped in as an absolute superhero and completely transformed my online presence into something far better than I could have imagined on my own. She was remarkably attentive to my goals, especially when building out the site&apos;s functionality, like creating a dynamic &quot;In Service Now&quot; section that automatically rotates seasonal offerings based on the calendar month.
             </p>
             <p>
-              “When it came time to launch, she provided clear, step-by-step instructions for the domain and host transition. Her guidance made the entire process quick, stress-free, and seamless.”
+              To top it off, Rebecca ran performance tests comparing my site&apos;s original metrics to the newly launched version. Every single metric improved dramatically, with performance, SEO, and overall site health scores landing near or directly at a perfect 10/10.
+            </p>
+            <p>
+              When it came time to launch, she provided clear, step-by-step instructions for the domain and host transition. Even though the handoff required a few actions on my end, her guidance made the entire process quick, stress-free, and seamless. The site is now a powerful asset for my business, and I will definitely continue working with Rebecca to scale it as my company grows.”
             </p>
             <span>— Yohan, Minnlawn Lawn & Landscape</span>
           </blockquote>
