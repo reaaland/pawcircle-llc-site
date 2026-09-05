@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About PawCircle LLC",
+  title: "About Rebecca Aaland",
   description:
     "Learn about PawCircle LLC and Rebecca Aaland's practical approach to building websites and online tools for independent service businesses.",
   alternates: { canonical: "/about" },
