@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Work",
+  title: "Client Work & Case Studies",
   alternates: { canonical: "/work" },
 };
 
@@ -11,9 +11,9 @@ export default function WorkPage() {
     <main>
       <section className="shell page-shell" style={{ paddingBottom: "34px" }}>
         <p className="eyebrow">WORK</p>
-        <h1>Real projects, real business needs, useful outcomes.</h1>
+        <h1>A closer look at the work behind the finished site.</h1>
         <p className="lede page-lede">
-          Selected work showing how PawCircle approaches client websites and software projects from the business need through launch.
+          These examples show what the business needed, what changed, and why some projects involve more planning and technical work than others.
         </p>
       </section>
 
@@ -23,10 +23,10 @@ export default function WorkPage() {
             <p className="eyebrow">FEATURED CLIENT PROJECT · MINNLAWN</p>
             <h2>Moving beyond the limits of a template.</h2>
             <p className="lede-small">
-              Minnlawn already had a functioning website, but the GoDaddy template system limited how clearly the business could present its services, seasonal work, projects, and quote process. The rebuild created a more flexible site around the way Minnlawn actually works.
+              Minnlawn already had a functioning website, but the GoDaddy template system limited how clearly the business could present its services, seasonal work, projects, and quote process. The rebuild gave me more control over the design and features so the site could better match the way Minnlawn actually works.
             </p>
             <p className="lede-small">
-              The finished site includes responsive design, clearer service paths, a project gallery, quote functionality, seasonal automation, SEO and schema work, performance tuning, and launch support.
+              The finished site includes mobile-friendly design, clearer service paths, a project gallery, quote functionality, seasonal updates that change automatically, Google review integration, Google Cloud/API setup, SEO and search setup, performance testing, and launch support.
             </p>
             <div className="actions">
               <Link className="button button-light" href="/work/minnlawn">Read the Minnlawn case study</Link>
@@ -47,14 +47,14 @@ export default function WorkPage() {
             <h2>PawCircle Membership</h2>
           </div>
           <p>
-            A separate example of product development: taking a business idea through frontend development, authentication, data, payments, deployment, and launch.
+            A different kind of project: taking a business idea through design, development, accounts, data, payments, testing, and launch.
           </p>
         </div>
 
         <article className="detail-card" style={{ padding: "42px" }}>
           <p className="eyebrow">FULL-STACK MEMBERSHIP APPLICATION</p>
           <h2 style={{ fontSize: "clamp(2.2rem, 4.5vw, 4rem)", margin: "18px 0" }}>
-            From business idea to a production application.
+            From business idea to a working membership application.
           </h2>
           <p className="lede-small">
             Built with React, Supabase/PostgreSQL, Stripe, authentication, role-based profiles, privacy controls, payment workflows, and Vercel deployment.
@@ -67,10 +67,13 @@ export default function WorkPage() {
       </section>
 
       <section className="cta shell">
-        <p className="eyebrow">START A PROJECT</p>
-        <h2>Have an idea for a project?</h2>
-        <p>Tell me what you want to build, update, or improve and we can talk through the possibilities.</p>
-        <Link className="button button-dark" href="/contact">Start a conversation</Link>
+        <p className="eyebrow">COMPARE PROJECT SCOPE</p>
+        <h2>Want to see how the amount of work affects the price?</h2>
+        <p>The pricing page explains the difference between a simple site, a fuller small-business site, and a custom build like Minnlawn.</p>
+        <div className="actions">
+          <Link className="button button-dark" href="/pricing">See pricing</Link>
+          <Link className="button button-light" href="/contact">Request a written estimate</Link>
+        </div>
       </section>
     </main>
   );
