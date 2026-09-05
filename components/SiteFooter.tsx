@@ -10,6 +10,7 @@ export function SiteFooter() {
         </div>
         <div className="footer-links">
           <Link href="/services">Services</Link>
+          <Link href="/pricing">Pricing</Link>
           <Link href="/work">Work</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
