@@ -71,7 +71,7 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify({
         from: "PawCircle LLC Website <onboarding@resend.dev>",
-        to: ["reaaland@gmail.com"],
+        to: ["pawcirclellc@gmail.com", "reaaland@gmail.com"],
         reply_to: email,
         subject: `PawCircle project inquiry from ${subjectName}`,
         text: details.join("\n"),
