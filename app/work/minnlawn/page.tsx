@@ -1,7 +1,10 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Minnlawn Case Study" };
+export const metadata: Metadata = {
+  title: "Minnlawn Case Study",
+  alternates: { canonical: "/work/minnlawn" },
+};
 
 const highlights = [
   ["01", "Responsive rebuild", "Reorganized the site around customer questions, service discovery, and mobile use."],
