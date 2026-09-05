@@ -79,27 +79,41 @@ export default function WorkPage() {
         </div>
 
         <div className="project-grid">
-          <article className="project-card">
+          <a
+            className="project-card"
+            href="https://www.pawcirclemembership.com"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="View the PawCircle Membership live project"
+          >
             <span>FULL-STACK PRODUCT</span>
             <h3>From idea to production</h3>
             <p>
               Product planning, frontend development, authentication, payments, profile systems, database work, deployment, and launch troubleshooting.
             </p>
-          </article>
-          <article className="project-card">
-            <span>WHY IT MATTERS</span>
-            <h3>Built from a real business problem</h3>
+            <strong style={{ marginTop: "24px" }}>View live project →</strong>
+          </a>
+          <a
+            className="project-card"
+            href="https://rebeccaaaland.com/work/pawcircle"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Read the PawCircle Membership case study"
+          >
+            <span>CASE STUDY</span>
+            <h3>How the product was built</h3>
             <p>
-              The project reflects the same approach PawCircle brings to client work: understand the workflow first, then build only what solves the problem.
+              See the development story, technical decisions, and lessons behind taking PawCircle Membership from concept through production.
             </p>
-          </article>
+            <strong style={{ marginTop: "24px" }}>Read the case study →</strong>
+          </a>
         </div>
       </section>
 
       <section className="cta shell">
-        <p className="eyebrow">HAVE A PROJECT IN MIND?</p>
-        <h2>Your site does not need to look like anyone else&apos;s.</h2>
-        <p>Start with what your business needs customers to understand, trust, and do next.</p>
+        <p className="eyebrow">HAVE AN IDEA FOR A PROJECT?</p>
+        <h2>Have an idea for a project?</h2>
+        <p>Tell me what you want to build, update, or improve and we can talk through the possibilities.</p>
         <Link className="button button-dark" href="/contact">Start a conversation</Link>
       </section>
     </main>
