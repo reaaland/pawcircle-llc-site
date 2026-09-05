@@ -46,7 +46,7 @@ export default function HomePage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">WHAT PAWCIRCLE DOES</p>
-            <h2>Useful technology without making your business harder to run.</h2>
+            <h2>Websites and technology built around the way your business works.</h2>
           </div>
           <p>
             PawCircle LLC grew from running a real service business and building technology to solve real operating problems.
