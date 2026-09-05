@@ -6,7 +6,7 @@ export function SiteFooter() {
       <div className="shell footer-grid">
         <div>
           <p className="eyebrow">PAWCIRCLE LLC</p>
-          <h2>Technology that helps small businesses work better.</h2>
+          <h2>Websites and online tools that help small businesses work better.</h2>
         </div>
         <div className="footer-links">
           <Link href="/services">Services</Link>
