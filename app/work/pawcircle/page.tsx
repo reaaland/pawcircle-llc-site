@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "PawCircle Membership Case Study",
+  description:
+    "See how PawCircle Membership was planned, built, and launched with React, Supabase, Stripe, authentication, profiles, and payments.",
   alternates: { canonical: "/work/pawcircle" },
 };
 
