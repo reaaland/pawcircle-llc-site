@@ -13,16 +13,10 @@ export default function ContactPage() {
       </p>
 
       <section
-        className="contact-layout"
         aria-label="Contact PawCircle LLC"
-        style={{ gridTemplateColumns: "1fr", maxWidth: "860px" }}
+        style={{ maxWidth: "860px", marginTop: "56px" }}
       >
         <div className="contact-form-card">
-          <p className="eyebrow">PROJECT INQUIRY</p>
-          <h2>Send a message.</h2>
-          <p className="contact-form-intro">
-            Your inquiry is sent directly to PawCircle LLC. I&apos;ll reply to the email address you provide below.
-          </p>
           <ContactForm />
         </div>
       </section>
