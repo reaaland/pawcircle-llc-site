@@ -3,6 +3,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Website Services & Support",
+  description:
+    "Website design, website improvements, SEO basics, ongoing care, and online business help from PawCircle LLC in Rochester, Minnesota.",
   alternates: { canonical: "/services" },
 };
 
