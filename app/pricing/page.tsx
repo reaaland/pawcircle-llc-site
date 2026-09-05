@@ -72,7 +72,7 @@ const existingSiteOptions = [
   {
     title: "Full Website Rebuild",
     price: "Uses the website tiers above",
-    text: "For an existing site where the current builder, template, layout, or structure is getting in the way of what the business needs.",
+    text: "For an existing site where the current platform, template, layout, or structure is getting in the way of what the business needs.",
   },
 ] as const;
 
@@ -191,7 +191,7 @@ export default function PricingPage() {
             <h2>You may only need improvements — not a full rebuild.</h2>
           </div>
           <p>
-            I will look at what you already have before recommending the bigger option. Sometimes a focused refresh is enough. Other times the current website builder or template limits what can realistically be changed.
+            I will look at what you already have before recommending the bigger option. Sometimes a focused refresh is enough. Other times the current website platform or template limits what can realistically be changed.
           </p>
         </div>
 
@@ -207,10 +207,10 @@ export default function PricingPage() {
         </div>
 
         <aside className="template-note">
-          <p className="eyebrow">WORKING WITH A TEMPLATE-BASED SITE</p>
-          <h2>Some website builders simply do not allow every kind of change.</h2>
+          <p className="eyebrow">IF YOUR CURRENT SITE USES A WEBSITE PLATFORM</p>
+          <h2>Some website platforms limit what can be changed.</h2>
           <p>
-            Some website builders limit how much the layout, features, SEO, or integrations can be changed. I can improve the site within those limits, but bigger changes may require rebuilding it in a way that gives me more control over the design and features.
+            Services like GoDaddy, Wix, and Squarespace can limit how much the design, features, SEO, or integrations can be changed. I can improve a site within those limits, but bigger changes may require rebuilding the site in a way that gives me more control over the design and features.
           </p>
           <p>
             If your current platform restricts the changes you want, I will explain what can realistically be improved before recommending a rebuild.
