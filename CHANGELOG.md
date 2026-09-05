@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-09-05
+
+### Updated
+
+- Refocused the PawCircle LLC website around services the company can offer now: small-business websites, website care and improvements, and practical technology help.
+- Removed RouteLedger from the primary navigation, homepage product promotion, selected work, and sitemap.
+- Changed the former `/routeledger` page to redirect to `/services` so stale links do not expose outdated product positioning.
+- Updated the About, Work, README, roadmap, decisions log, and centralized site description to match the services-first launch plan.
+- Documented that PawCircle LLC's bookkeeping and operations application remains an internal business system for now rather than a customer-facing paid product.
+
 ## 2026-09-04
 
 ### Added
