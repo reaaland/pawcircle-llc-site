@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Minnlawn Website Case Study",
+  description:
+    "See how PawCircle LLC rebuilt Minnlawn's website with clearer services, seasonal content, Google reviews, SEO, performance work, and launch support.",
   alternates: { canonical: "/work/minnlawn" },
 };
 
