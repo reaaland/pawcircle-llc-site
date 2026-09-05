@@ -1,16 +1,26 @@
 # PawCircle LLC Website Decisions
 
+## 2026-09-05 — Launch the website around services, not the internal ledger
+
+PawCircle LLC's public website will focus on services the company can offer now: small-business websites, website maintenance and improvements, and practical technology help.
+
+The bookkeeping and operations application developed for PawCircle LLC is currently an internal business system. It is not ready to be offered as a multi-user paid product and should not be presented as one on the public website. The working names RouteLedger, BizHandler, and PawCircle Ledger remain internal product-development references only.
+
+If the internal system later becomes a customer product, that will require a separate product decision and architecture for customer accounts, workspace/data isolation, onboarding, billing, security, and privacy.
+
+This decision supersedes the earlier assumption that RouteLedger should be a public PawCircle product at website launch.
+
 ## 2026-09-04 — PawCircle LLC remains the umbrella brand
 
 PawCircle LLC will not be renamed to a personal-name design agency. The company keeps continuity with its pet-service origin while expanding into practical technology for independent service businesses.
 
 ## 2026-09-04 — Broaden beyond pet businesses
 
-Public positioning should not restrict PawCircle to pet businesses. Minnlawn and Majerus Outdoor Services demonstrate that the same technology problems appear across many service industries.
+Public positioning should not restrict PawCircle to pet businesses. The same website and technology problems appear across many service industries.
 
-## 2026-09-04 — RouteLedger is a PawCircle product
+## 2026-09-04 — RouteLedger was initially treated as a PawCircle product
 
-RouteLedger is currently presented as a distinct PawCircle product, but the name is now treated as a working title while a more distinctive final name is evaluated. The product identity should reflect the broader direction beyond mileage: work, mileage, expected income, expenses, invoicing, and simple business summaries.
+RouteLedger was initially presented as a distinct PawCircle product and as a working title for a broader tool covering work, mileage, expected income, expenses, invoicing, and business summaries. The September 5 decision above supersedes that public-product positioning while the tool remains an internal PawCircle LLC system.
 
 ## 2026-09-04 — Mahaku stays separate
 
@@ -34,7 +44,7 @@ Public site contact uses `pawcirclellc@gmail.com`. Rebecca's personal email shou
 
 ## 2026-09-04 — Production identity should be centralized
 
-Company name, tagline, public email, location, canonical domain, and current product-name status live in `lib/site.ts` so the site does not scatter business identity across unrelated components.
+Company name, tagline, public email, location, and canonical domain live in `lib/site.ts` so the site does not scatter business identity across unrelated components.
 
 ## 2026-09-04 — pawcirclellc.com is the canonical website domain
 
