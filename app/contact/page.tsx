@@ -7,34 +7,34 @@ export default function ContactPage() {
   return (
     <main className="shell page-shell">
       <p className="eyebrow">CONTACT</p>
-      <h1>Let&apos;s make your technology work better.</h1>
+      <h1>Have a project in mind?</h1>
       <p className="lede page-lede">
-        Need a new website, improvements to an existing one, or help with a frustrating workflow? Tell me what you are trying to accomplish. You do not need to know the technical solution first.
+        Need a new website, updates to an existing site, ongoing maintenance, or help with a small-business technology project? Send a few details and we can start there.
       </p>
 
       <section className="contact-layout" aria-label="Contact PawCircle LLC">
         <div className="contact-card contact-info-card">
           <div>
-            <p className="eyebrow">WAYS I CAN HELP</p>
-            <h2>What are you working on?</h2>
+            <p className="eyebrow">PROJECT TYPES</p>
+            <h2>Websites, improvements, and practical tech help.</h2>
             <p>
-              A new or outdated website · website updates and maintenance · quote or contact forms · mobile and accessibility improvements · SEO and performance · small-business technology workflows and integrations
+              New websites · redesigns and updates · maintenance · forms and integrations · SEO, performance, and accessibility · small-business technology support
             </p>
           </div>
           <div>
-            <p className="eyebrow">PREFER EMAIL?</p>
-            <h2>Send a message directly.</h2>
+            <p className="eyebrow">EMAIL</p>
+            <h2>Prefer to email directly?</h2>
             <p>
-              Write to <a className="text-link" href="mailto:pawcirclellc@gmail.com">pawcirclellc@gmail.com</a> and I will get back to you.
+              Reach me at <a className="text-link" href="mailto:pawcirclellc@gmail.com">pawcirclellc@gmail.com</a>.
             </p>
           </div>
         </div>
 
         <div className="contact-form-card">
-          <p className="eyebrow">START HERE</p>
+          <p className="eyebrow">PROJECT INQUIRY</p>
           <h2>Tell me about your project.</h2>
           <p className="contact-form-intro">
-            A few sentences about your business, what you need, and what is not working is plenty. I can help figure out the technical part from there.
+            Share a little about your business and what you would like to build, update, or improve.
           </p>
           <ContactForm />
         </div>
