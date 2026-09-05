@@ -1,7 +1,15 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "../lib/site";
 
-const routes = ["", "/services", "/work", "/about", "/contact"];
+const routes = [
+  "",
+  "/services",
+  "/work",
+  "/work/minnlawn",
+  "/work/pawcircle",
+  "/about",
+  "/contact",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -10,6 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteConfig.url}${route}`,
     lastModified,
     changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : 0.8,
+    priority: route === "" ? 1 : route.startsWith("/work/") ? 0.7 : 0.8,
   }));
 }
