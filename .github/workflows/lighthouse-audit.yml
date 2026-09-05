@@ -1,0 +1,93 @@
+name: Lighthouse audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/lighthouse-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Use Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Wait for the latest production deployment
+        run: sleep 120
+
+      - name: Run Lighthouse on core pages
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          pages=(
+            "home|https://pawcirclellc.com/"
+            "services|https://pawcirclellc.com/services"
+            "pricing|https://pawcirclellc.com/pricing"
+            "work|https://pawcirclellc.com/work"
+            "minnlawn|https://pawcirclellc.com/work/minnlawn"
+            "pawcircle-case-study|https://pawcirclellc.com/work/pawcircle"
+            "about|https://pawcirclellc.com/about"
+            "contact|https://pawcirclellc.com/contact"
+          )
+
+          for entry in "${pages[@]}"; do
+            slug="${entry%%|*}"
+            url="${entry#*|}"
+
+            npx -y lighthouse@12.8.2 "$url" \
+              --quiet \
+              --chrome-flags="--headless --no-sandbox" \
+              --only-categories=performance,accessibility,best-practices,seo \
+              --output=json \
+              --output-path="lighthouse-${slug}-mobile.json"
+
+            npx -y lighthouse@12.8.2 "$url" \
+              --quiet \
+              --chrome-flags="--headless --no-sandbox" \
+              --preset=desktop \
+              --only-categories=performance,accessibility,best-practices,seo \
+              --output=json \
+              --output-path="lighthouse-${slug}-desktop.json"
+          done
+
+      - name: Print score summary
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const files = fs.readdirSync('.').filter((file) => file.startsWith('lighthouse-') && file.endsWith('.json')).sort();
+          const rows = [];
+
+          for (const file of files) {
+            const report = JSON.parse(fs.readFileSync(file, 'utf8'));
+            const c = report.categories;
+            rows.push({
+              report: file.replace(/^lighthouse-/, '').replace(/\.json$/, ''),
+              performance: Math.round(c.performance.score * 100),
+              accessibility: Math.round(c.accessibility.score * 100),
+              bestPractices: Math.round(c['best-practices'].score * 100),
+              seo: Math.round(c.seo.score * 100),
+            });
+          }
+
+          console.table(rows);
+          fs.writeFileSync('lighthouse-summary.json', JSON.stringify(rows, null, 2));
+          NODE
+
+      - name: Upload Lighthouse reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: pawcircle-lighthouse-reports
+          path: |
+            lighthouse-*.json
+          retention-days: 7
