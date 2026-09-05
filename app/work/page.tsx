@@ -10,50 +10,55 @@ export default function WorkPage() {
         <p className="eyebrow">WORK</p>
         <h1>Real projects, real business needs, useful outcomes.</h1>
         <p className="lede page-lede">
-          Selected client and software work showing practical problem solving, responsive development, and attention to the details small businesses depend on.
+          Selected work showing how PawCircle approaches client websites and software projects from the business need through launch.
         </p>
       </section>
 
-      <section className="section shell" style={{ paddingTop: "34px", paddingBottom: "58px" }}>
-        <article className="detail-card" style={{ padding: "42px" }}>
-          <p className="eyebrow">CLIENT WEBSITE · MINNLAWN LAWN & LANDSCAPE</p>
-          <h2 style={{ fontSize: "clamp(2.2rem, 4.5vw, 4rem)", margin: "18px 0" }}>
-            Turning an outdated website into a stronger business asset.
-          </h2>
-          <p className="lede-small">
-            Minnlawn&apos;s rebuild included responsive design, clearer service paths, a project gallery, quote functionality, seasonal automation, SEO/schema work, performance tuning, and launch support.
-          </p>
-          <blockquote style={{ margin: "30px 0 0", padding: "24px 0 0", borderTop: "1px solid var(--line)" }}>
-            <p style={{ fontSize: "1.28rem", lineHeight: 1.45, margin: 0 }}>
-              “The site is now a powerful asset for my business, and I will definitely continue working with Rebecca to scale it as my company grows.”
+      <section className="split-section">
+        <div className="shell split-grid">
+          <div>
+            <p className="eyebrow">FEATURED CLIENT PROJECT · MINNLAWN</p>
+            <h2>Moving beyond the limits of a template.</h2>
+            <p className="lede-small">
+              Minnlawn already had a functioning website, but the GoDaddy template system limited how clearly the business could present its services, seasonal work, projects, and quote process. The rebuild created a more flexible site around the way Minnlawn actually works.
             </p>
-            <span style={{ display: "block", marginTop: "12px", color: "var(--muted)" }}>
-              — Yohan, Minnlawn Lawn & Landscape
-            </span>
-          </blockquote>
-          <div className="actions">
-            <Link className="button button-dark" href="/work/minnlawn">Read Minnlawn case study</Link>
-            <a className="button button-light" href="https://minnlawn.com" target="_blank" rel="noreferrer">
-              Visit Minnlawn website
-            </a>
+            <p className="lede-small">
+              The finished site includes responsive design, clearer service paths, a project gallery, quote functionality, seasonal automation, SEO and schema work, performance tuning, and launch support.
+            </p>
+            <div className="actions">
+              <Link className="button button-light" href="/work/minnlawn">Read the Minnlawn case study</Link>
+              <a className="button button-light" href="https://minnlawn.com" target="_blank" rel="noreferrer">Visit Minnlawn website</a>
+            </div>
           </div>
-        </article>
+          <blockquote className="quote-card">
+            <p>“The site is now a powerful asset for my business, and I will definitely continue working with Rebecca to scale it as my company grows.”</p>
+            <span>— Yohan, Minnlawn Lawn & Landscape</span>
+          </blockquote>
+        </div>
       </section>
 
-      <section className="section shell" style={{ paddingTop: "18px", paddingBottom: "70px" }}>
+      <section className="section shell" style={{ paddingTop: "80px", paddingBottom: "70px" }}>
+        <div className="section-heading" style={{ marginBottom: "34px" }}>
+          <div>
+            <p className="eyebrow">SOFTWARE PROJECT</p>
+            <h2>PawCircle Membership</h2>
+          </div>
+          <p>
+            A separate example of product development: taking a business idea through frontend development, authentication, data, payments, deployment, and launch.
+          </p>
+        </div>
+
         <article className="detail-card" style={{ padding: "42px" }}>
-          <p className="eyebrow">SOFTWARE DEVELOPMENT · PAWCIRCLE MEMBERSHIP</p>
+          <p className="eyebrow">FULL-STACK MEMBERSHIP APPLICATION</p>
           <h2 style={{ fontSize: "clamp(2.2rem, 4.5vw, 4rem)", margin: "18px 0" }}>
-            From business idea to a production membership application.
+            From business idea to a production application.
           </h2>
           <p className="lede-small">
-            A full-stack membership product built with React, Supabase/PostgreSQL, Stripe, authentication, role-based profiles, privacy controls, payment workflows, and Vercel deployment.
+            Built with React, Supabase/PostgreSQL, Stripe, authentication, role-based profiles, privacy controls, payment workflows, and Vercel deployment.
           </p>
           <div className="actions">
-            <Link className="button button-dark" href="/work/pawcircle">Read PawCircle case study</Link>
-            <a className="button button-light" href="https://www.pawcirclemembership.com" target="_blank" rel="noreferrer">
-              View live project
-            </a>
+            <Link className="button button-dark" href="/work/pawcircle">Read the PawCircle case study</Link>
+            <a className="button button-light" href="https://www.pawcirclemembership.com" target="_blank" rel="noreferrer">View live project</a>
           </div>
         </article>
       </section>
