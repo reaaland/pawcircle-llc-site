@@ -14,6 +14,7 @@ const links = [
 export function SiteHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const showBrandSubtitle = pathname !== "/";
 
   useEffect(() => {
     setMenuOpen(false);
@@ -37,7 +38,9 @@ export function SiteHeader() {
           <span className="brand-mark" aria-hidden="true">P</span>
           <span>
             <strong>PawCircle LLC</strong>
-            <small>Practical technology for independent service businesses</small>
+            {showBrandSubtitle ? (
+              <small>Practical technology for independent service businesses</small>
+            ) : null}
           </span>
         </Link>
 
