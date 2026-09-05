@@ -74,6 +74,12 @@
   margin-top: 9px;
 }
 
+.pricing-example-card .eyebrow {
+  color: var(--cyan);
+  font-size: .76rem;
+  line-height: 1.6;
+}
+
 .pricing-example-card h3 {
   margin: 16px 0;
   font-size: 2rem;
