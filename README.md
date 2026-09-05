@@ -1,17 +1,17 @@
 # PawCircle LLC Website
 
-Public business website for PawCircle LLC, positioned as a practical technology company for independent service businesses.
+Public business website for PawCircle LLC, positioned as a practical website and technology partner for independent service businesses.
 
 ## Purpose
 
-The site separates PawCircle LLC from the older PawCircle Membership product and presents the company as an umbrella for:
+The site separates PawCircle LLC from the older PawCircle Membership product and presents the company around services it can offer now:
 
 - Small-business websites
 - Website maintenance and improvements
-- A PawCircle software product currently using the working title RouteLedger
-- Future practical business tools that fit the same audience and mission
+- SEO, launch, accessibility, and performance basics
+- Practical help with website workflows, forms, Google tools, and related small-business technology
 
-Mahaku remains a separate venture and is intentionally not part of this site.
+PawCircle's internal bookkeeping and operations software is intentionally not presented as a public product at launch. Mahaku remains a separate venture and is also intentionally not part of this site.
 
 ## Stack
 
@@ -24,14 +24,15 @@ Mahaku remains a separate venture and is intentionally not part of this site.
 
 - `/` Home
 - `/services`
-- `/routeledger`
 - `/work`
 - `/about`
 - `/contact`
 
+The former `/routeledger` route redirects to `/services` so stale links do not expose outdated product positioning.
+
 ## Site configuration
 
-Shared public identity values live in `lib/site.ts`, including the company name, tagline, PawCircle business email, Rochester location, canonical domain, and current product-name status.
+Shared public identity values live in `lib/site.ts`, including the company name, tagline, PawCircle business email, Rochester location, and canonical domain.
 
 ## Local development
 
@@ -48,6 +49,6 @@ npm run build
 
 ## Current status
 
-The initial content architecture and visual foundation are complete. Responsive mobile navigation, PawCircle business-email contact handling, canonical metadata, robots configuration, and sitemap generation are implemented. Rebecca confirmed a successful local production build after the responsive/contact update.
+The core content architecture and visual foundation are complete. Responsive mobile navigation, PawCircle business-email contact handling, canonical metadata, robots configuration, and sitemap generation are implemented.
 
 Remaining launch work includes server-side contact delivery, real project imagery, social preview artwork, final Lighthouse/accessibility QA, deployment, and connecting `pawcirclellc.com`.
