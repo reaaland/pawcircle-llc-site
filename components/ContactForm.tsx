@@ -92,7 +92,7 @@ export function ContactForm() {
       ) : null}
 
       <button className="button button-dark" type="submit" disabled={status === "submitting"}>
-        {status === "submitting" ? "Sending…" : "Send project inquiry"}
+        {status === "submitting" ? "Sending…" : "Send message"}
       </button>
     </form>
   );
