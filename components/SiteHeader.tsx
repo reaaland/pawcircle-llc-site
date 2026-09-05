@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 
 const links = [
   ["Services", "/services"],
-  ["RouteLedger", "/routeledger"],
   ["Work", "/work"],
   ["About", "/about"],
   ["Contact", "/contact"],
