@@ -67,15 +67,15 @@ export default function HomePage() {
         <div className="section-heading" style={{ marginBottom: "36px" }}>
           <div>
             <p className="eyebrow">SELECTED WORK</p>
-            <h2>Built for real businesses and real constraints.</h2>
+            <h2>Work built around real business needs.</h2>
           </div>
-          <p>Choose a project to see what was built, why it mattered, and how the finished work performs.</p>
+          <p>See two examples of how I approach client websites and software projects.</p>
         </div>
         <div className="project-grid">
           <Link className="project-card" href="/work/minnlawn" aria-label="Read the Minnlawn Lawn & Landscape case study">
             <span>CLIENT WEBSITE · CASE STUDY</span>
             <h3>Minnlawn Lawn & Landscape</h3>
-            <p>Responsive service-business website, gallery, quote flow, SEO, schema, performance tuning, and launch support.</p>
+            <p>A custom rebuild that moved beyond the limits of a GoDaddy template, with clearer service paths, seasonal content, quote functionality, SEO, performance work, and launch support.</p>
             <strong style={{ marginTop: "24px" }}>View Minnlawn case study →</strong>
           </Link>
           <Link className="project-card" href="/work/pawcircle" aria-label="Read the PawCircle Membership case study">
@@ -84,26 +84,6 @@ export default function HomePage() {
             <p>A production membership application built with React, Supabase, Stripe, authentication, role-based profiles, and payment workflows.</p>
             <strong style={{ marginTop: "24px" }}>View PawCircle case study →</strong>
           </Link>
-        </div>
-      </section>
-
-      <section className="split-section">
-        <div className="shell split-grid">
-          <div>
-            <p className="eyebrow">CLIENT RESULT · MINNLAWN</p>
-            <h2>A website should become a business asset, not another thing to babysit.</h2>
-            <p className="lede-small">
-              Minnlawn&apos;s rebuild combined a clearer customer path with seasonal automation, quote functionality, SEO work, performance tuning, and launch support.
-            </p>
-            <div className="actions">
-              <Link className="button button-light" href="/work/minnlawn">Read the case study</Link>
-              <a className="button button-light" href="https://minnlawn.com" target="_blank" rel="noreferrer">Visit Minnlawn site</a>
-            </div>
-          </div>
-          <blockquote className="quote-card">
-            <p>“The site is now a powerful asset for my business, and I will definitely continue working with Rebecca to scale it as my company grows.”</p>
-            <span>— Yohan, Minnlawn Lawn & Landscape</span>
-          </blockquote>
         </div>
       </section>
 
