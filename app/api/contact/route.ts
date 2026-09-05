@@ -70,7 +70,7 @@ export async function POST(request: Request) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "PawCircle LLC Website <onboarding@resend.dev>",
+        from: "PawCircle LLC Website <website@pawcirclellc.com>",
         to: ["pawcirclellc@gmail.com", "reaaland@gmail.com"],
         reply_to: email,
         subject: `PawCircle project inquiry from ${subjectName}`,
