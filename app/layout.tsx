@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import "./interior-backgrounds.css";
 import "./pricing.css";
@@ -8,6 +9,7 @@ import { SiteFooter } from "../components/SiteFooter";
 import { siteConfig } from "../lib/site";
 
 const defaultTitle = `${siteConfig.name} | Small Business Websites in Rochester, MN`;
+const googleAnalyticsId = "G-NBPCCCC8M8";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -86,6 +88,18 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
           }}
         />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${googleAnalyticsId}');
+          `}
+        </Script>
         <SiteHeader />
         {children}
         <SiteFooter />
