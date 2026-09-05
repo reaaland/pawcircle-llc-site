@@ -87,8 +87,8 @@ export default function HomePage() {
 
       <section className="cta shell">
         <p className="eyebrow">START SIMPLE</p>
-        <h2>Need a website or a technology problem untangled?</h2>
-        <p>Tell me what is getting in the way. We can figure out the smallest useful solution.</p>
+        <h2>Need a website, updates to an existing site, or help untangling a technology problem?</h2>
+        <p>Tell me what’s getting in the way, and we can figure out the smallest useful next step.</p>
         <Link className="button button-dark" href="/contact">Start a conversation</Link>
       </section>
     </main>
