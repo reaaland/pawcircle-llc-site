@@ -35,7 +35,19 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="shell header-inner">
         <Link className="brand" href="/" aria-label="PawCircle LLC home">
-          <span className="brand-mark" aria-hidden="true">P</span>
+          <span
+            className="brand-mark"
+            aria-hidden="true"
+            style={{ background: "transparent", boxShadow: "none", borderRadius: "50%", overflow: "hidden", padding: 0 }}
+          >
+            <img
+              src="/pawcircle-mark.svg"
+              alt=""
+              width="42"
+              height="42"
+              style={{ display: "block", width: "100%", height: "100%" }}
+            />
+          </span>
           <span>
             <strong>PawCircle LLC</strong>
             {showBrandSubtitle ? (
