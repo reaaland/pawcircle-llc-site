@@ -13,8 +13,8 @@ const services = [
   },
   {
     number: "03",
-    title: "Online business tools",
-    body: "Help with contact and quote forms, Google tools, simple automations, integrations, and other online tasks that can make day-to-day work easier.",
+    title: "Help with online business tools",
+    body: "Forms, Google tools, simple automations, and connecting the online systems you already use so they work better together.",
   },
 ];
 
