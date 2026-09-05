@@ -85,6 +85,23 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="split-section">
+        <div className="shell split-grid">
+          <div>
+            <p className="eyebrow">CLIENT RESULT · MINNLAWN</p>
+            <h2>A website should become a business asset, not another thing to babysit.</h2>
+            <p className="lede-small">
+              Minnlawn&apos;s rebuild combined a clearer customer path with seasonal automation, quote functionality, SEO work, performance tuning, and launch support.
+            </p>
+            <Link className="text-link" href="/work">Read the Minnlawn case study →</Link>
+          </div>
+          <blockquote className="quote-card">
+            <p>“The site is now a powerful asset for my business, and I will definitely continue working with Rebecca to scale it as my company grows.”</p>
+            <span>— Yohan, Minnlawn Lawn & Landscape</span>
+          </blockquote>
+        </div>
+      </section>
+
       <section className="cta shell">
         <p className="eyebrow">START SIMPLE</p>
         <h2>Need a website, updates to an existing site, or help untangling a technology problem?</h2>
