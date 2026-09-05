@@ -22,7 +22,7 @@ jobs:
           node-version: 22
 
       - name: Wait for the latest production deployment
-        run: sleep 120
+        run: sleep 15
 
       - name: Run Lighthouse on core pages
         shell: bash
