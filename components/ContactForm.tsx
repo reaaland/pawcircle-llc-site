@@ -16,7 +16,7 @@ export function ContactForm() {
     const business = String(form.get("business") ?? "").trim();
     const message = String(form.get("message") ?? "").trim();
 
-    const subject = encodeURIComponent(`PawCircle LLC website inquiry${business ? ` — ${business}` : ""}`);
+    const subject = encodeURIComponent(`PawCircle LLC project inquiry${business ? ` — ${business}` : ""}`);
     const body = encodeURIComponent(
       [
         `Name: ${name}`,
@@ -29,7 +29,7 @@ export function ContactForm() {
         .join("\n"),
     );
 
-    setStatus("Your email app is opening with this message ready to send.");
+    setStatus("Opening your email app with the message ready to send.");
     window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${subject}&body=${body}`;
   }
 
@@ -52,14 +52,12 @@ export function ContactForm() {
       </label>
 
       <label>
-        What would you like help with?
+        Project details
         <textarea name="message" rows={7} required />
       </label>
 
-      <button className="button button-dark" type="submit">Email PawCircle LLC</button>
-      <p className="form-note">
-        This version opens your email app and addresses the message directly to PawCircle LLC. A server-delivered form can be added before launch without exposing your personal email.
-      </p>
+      <button className="button button-dark" type="submit">Prepare email</button>
+      <p className="form-note">This opens your email app with your message filled in and ready to send.</p>
       {status ? <p className="form-status" role="status">{status}</p> : null}
     </form>
   );
