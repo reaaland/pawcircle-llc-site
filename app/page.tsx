@@ -64,24 +64,26 @@ export default function HomePage() {
       </section>
 
       <section className="section shell">
-        <div className="section-heading">
+        <div className="section-heading" style={{ marginBottom: "36px" }}>
           <div>
             <p className="eyebrow">SELECTED WORK</p>
             <h2>Built for real businesses and real constraints.</h2>
           </div>
-          <Link className="text-link" href="/work">View work →</Link>
+          <p>Choose a project to see what was built, why it mattered, and how the finished work performs.</p>
         </div>
         <div className="project-grid">
-          <article className="project-card">
-            <span>CLIENT WEBSITE</span>
+          <Link className="project-card" href="/work/minnlawn" aria-label="Read the Minnlawn Lawn & Landscape case study">
+            <span>CLIENT WEBSITE · CASE STUDY</span>
             <h3>Minnlawn Lawn & Landscape</h3>
             <p>Responsive service-business website, gallery, quote flow, SEO, schema, performance tuning, and launch support.</p>
-          </article>
-          <article className="project-card">
-            <span>SOFTWARE DEVELOPMENT</span>
+            <strong style={{ marginTop: "24px" }}>View Minnlawn case study →</strong>
+          </Link>
+          <Link className="project-card" href="/work/pawcircle" aria-label="Read the PawCircle Membership case study">
+            <span>SOFTWARE DEVELOPMENT · CASE STUDY</span>
             <h3>PawCircle Membership</h3>
             <p>A production membership application built with React, Supabase, Stripe, authentication, role-based profiles, and payment workflows.</p>
-          </article>
+            <strong style={{ marginTop: "24px" }}>View PawCircle case study →</strong>
+          </Link>
         </div>
       </section>
 
@@ -93,7 +95,10 @@ export default function HomePage() {
             <p className="lede-small">
               Minnlawn&apos;s rebuild combined a clearer customer path with seasonal automation, quote functionality, SEO work, performance tuning, and launch support.
             </p>
-            <Link className="text-link" href="/work">Read the Minnlawn case study →</Link>
+            <div className="actions">
+              <Link className="button button-light" href="/work/minnlawn">Read the case study</Link>
+              <a className="button button-light" href="https://minnlawn.com" target="_blank" rel="noreferrer">Visit Minnlawn site</a>
+            </div>
           </div>
           <blockquote className="quote-card">
             <p>“The site is now a powerful asset for my business, and I will definitely continue working with Rebecca to scale it as my company grows.”</p>
@@ -105,7 +110,7 @@ export default function HomePage() {
       <section className="cta shell">
         <p className="eyebrow">START SIMPLE</p>
         <h2>Need a website, updates to an existing site, or help untangling a technology problem?</h2>
-        <p>Tell me what’s getting in the way, and we can figure out the smallest useful next step.</p>
+        <p>Tell me what you&apos;d like to build, update, or improve.</p>
         <Link className="button button-dark" href="/contact">Start a conversation</Link>
       </section>
     </main>
