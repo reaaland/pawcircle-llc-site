@@ -72,17 +72,17 @@ export default function HomePage() {
           <p>See two examples of how I approach client websites and software projects.</p>
         </div>
         <div className="project-grid">
-          <Link className="project-card" href="/work/pawcircle" aria-label="Read the PawCircle Membership case study">
-            <span>SOFTWARE DEVELOPMENT · CASE STUDY</span>
-            <h3>PawCircle Membership</h3>
-            <p>A production membership application built with React, Supabase, Stripe, authentication, role-based profiles, and payment workflows.</p>
-            <strong style={{ marginTop: "24px" }}>View PawCircle case study →</strong>
-          </Link>
           <Link className="project-card" href="/work/minnlawn" aria-label="Read the Minnlawn Lawn & Landscape case study">
             <span>CLIENT WEBSITE · CASE STUDY</span>
             <h3>Minnlawn Lawn & Landscape</h3>
             <p>A custom rebuild that moved beyond the limits of a GoDaddy template, with clearer service paths, seasonal content, quote functionality, SEO, performance work, and launch support.</p>
             <strong style={{ marginTop: "24px" }}>View Minnlawn case study →</strong>
+          </Link>
+          <Link className="project-card" href="/work/pawcircle" aria-label="Read the PawCircle Membership case study">
+            <span>SOFTWARE DEVELOPMENT · CASE STUDY</span>
+            <h3>PawCircle Membership</h3>
+            <p>A production membership application built with React, Supabase, Stripe, authentication, role-based profiles, and payment workflows.</p>
+            <strong style={{ marginTop: "24px" }}>View PawCircle case study →</strong>
           </Link>
         </div>
       </section>
