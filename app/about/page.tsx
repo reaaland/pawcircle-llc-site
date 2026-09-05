@@ -6,18 +6,18 @@ export const metadata: Metadata = { title: "About" };
 const principles = [
   {
     number: "01",
-    title: "Understand the business first",
-    body: "The website or technology should fit the way the business actually works — not force the business to fit the tool.",
+    title: "Start with your goals",
+    body: "What should visitors understand about your business, trust about your work, and be able to do next?",
   },
   {
     number: "02",
-    title: "Keep the technical part understandable",
-    body: "Clients should know what is being built, why it matters, and what they need to know to use it confidently.",
+    title: "Design around your business",
+    body: "Your website should reflect the way your business actually works and feel like your business — not a recycled template.",
   },
   {
     number: "03",
-    title: "Build what is useful",
-    body: "No unnecessary features, rebuilds, or complexity. The goal is a solution that earns its place in the business.",
+    title: "Build for real use",
+    body: "Responsive design, clear navigation, useful content, performance, accessibility, and the features your customers actually need.",
   },
 ] as const;
 
@@ -38,7 +38,7 @@ export default function AboutPage() {
           gridTemplateColumns: "minmax(0, 1.05fr) minmax(280px, .75fr)",
           gap: "24px",
           marginTop: "72px",
-          alignItems: "stretch",
+          alignItems: "start",
         }}
       >
         <article className="detail-card" style={{ padding: "42px" }}>
@@ -63,7 +63,7 @@ export default function AboutPage() {
             boxShadow: "0 24px 70px rgba(18, 27, 45, .18)",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "space-between",
+            gap: "26px",
           }}
         >
           <div>
@@ -75,7 +75,7 @@ export default function AboutPage() {
               Developer, small-business owner, and former educator with 18 years of teaching experience.
             </p>
           </div>
-          <p style={{ color: "#9eabc0", marginBottom: 0 }}>
+          <p style={{ color: "#9eabc0", margin: 0 }}>
             Teaching shaped how I work with technology: break complicated things into clear pieces, explain the why, and never assume someone else&apos;s “simple” is the same as mine.
           </p>
         </aside>
@@ -85,10 +85,10 @@ export default function AboutPage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">HOW I WORK</p>
-            <h2>Clear thinking before more technology.</h2>
+            <h2>What is your vision for your website?</h2>
           </div>
           <p>
-            The best solution is not always the biggest one. I start with what the business actually needs and build from there.
+            I start by understanding what you want the site to communicate, how you want customers to use it, and what success should look like for your business.
           </p>
         </div>
 
@@ -105,8 +105,8 @@ export default function AboutPage() {
 
       <section className="cta" style={{ marginTop: "20px" }}>
         <p className="eyebrow">WORK WITH PAWCIRCLE</p>
-        <h2>Need a website or technology help for your business?</h2>
-        <p>Tell me what you&apos;re working on and we can figure out a useful next step.</p>
+        <h2>Have an idea for a project?</h2>
+        <p>Tell me what you&apos;re thinking about building or improving, and we can start there.</p>
         <Link className="button button-dark" href="/contact">Start a conversation</Link>
       </section>
     </main>
