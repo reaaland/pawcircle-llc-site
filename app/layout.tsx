@@ -8,7 +8,7 @@ import { siteConfig } from "../lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Practical Technology for Independent Service Businesses`,
+    default: `${siteConfig.name} | Websites & Online Tools for Independent Service Businesses`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} | Practical Technology for Independent Service Businesses`,
+    title: `${siteConfig.name} | Websites & Online Tools for Independent Service Businesses`,
     description: siteConfig.description,
   },
 };
