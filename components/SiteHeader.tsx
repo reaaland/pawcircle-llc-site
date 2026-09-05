@@ -51,7 +51,7 @@ export function SiteHeader() {
           <span>
             <strong>PawCircle LLC</strong>
             {showBrandSubtitle ? (
-              <small>Practical technology for independent service businesses</small>
+              <small>Websites and online tools for independent service businesses</small>
             ) : null}
           </span>
         </Link>
