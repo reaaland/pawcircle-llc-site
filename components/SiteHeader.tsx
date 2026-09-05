@@ -35,7 +35,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="shell header-inner">
-        <Link className="brand" href="/" aria-label="PawCircle LLC home">
+        <Link className="brand" href="/">
           <span
             className="brand-mark"
             aria-hidden="true"
