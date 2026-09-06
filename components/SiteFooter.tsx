@@ -14,10 +14,10 @@ export function SiteFooter() {
           <Link href="/work">Work</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
-          <a href="mailto:pawcirclellc@gmail.com">pawcirclellc@gmail.com</a>
+          <a href="mailto:rebecca@pawcirclellc.com">rebecca@pawcirclellc.com</a>
         </div>
       </div>
-      <div className="shell footer-bottom">© 2026 PawCircle LLC · Rochester, Minnesota</div>
+      <div className="shell footer-bottom">© 2026 PawCircle LLC · Rochester, Minnesota · Serving Minnesota and beyond</div>
     </footer>
   );
 }
