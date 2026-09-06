@@ -80,6 +80,7 @@ export default function HomePage() {
             <span>CLIENT WEBSITE · CASE STUDY</span>
             <h3>Minnlawn Lawn & Landscape</h3>
             <p>A custom rebuild that moved beyond the limits of a GoDaddy template, with clearer service paths, seasonal content, quote functionality, Google integration, search work, performance testing, and launch support.</p>
+            <p><em>“The site is now a powerful asset for my business.” — Yohan, Minnlawn Lawn & Landscape</em></p>
             <strong style={{ marginTop: "24px" }}>View Minnlawn case study →</strong>
           </Link>
           <Link className="project-card" href="/work/pawcircle" aria-label="Read the PawCircle Membership case study">
