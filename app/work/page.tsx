@@ -36,8 +36,11 @@ export default function WorkPage() {
             </div>
           </div>
           <blockquote className="quote-card">
-            <p>“The site is now a powerful asset for my business, and I will definitely continue working with Rebecca to scale it as my company grows.”</p>
+            <p>
+              “Rebecca stepped in as an absolute superhero and completely transformed my online presence into something far better than I could have imagined on my own. Every single metric improved dramatically. The site is now a powerful asset for my business.”
+            </p>
             <span>— Yohan, Minnlawn Lawn & Landscape</span>
+            <Link className="testimonial-link" href="/work/minnlawn#testimonial">Read Yohan&apos;s full testimonial →</Link>
           </blockquote>
         </div>
       </section>
