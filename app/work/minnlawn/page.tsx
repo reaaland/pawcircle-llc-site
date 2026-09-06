@@ -54,7 +54,7 @@ export default function MinnlawnCaseStudyPage() {
         </div>
       </section>
 
-      <section className="split-section">
+      <section id="testimonial" className="split-section">
         <div className="shell split-grid">
           <div>
             <p className="eyebrow">FULL TESTIMONIAL</p>
