@@ -28,10 +28,10 @@ export default function HomePage() {
     <main>
       <section className="hero shell">
         <div className="hero-copy">
-          <p className="eyebrow">ROCHESTER, MINNESOTA · WEBSITES & ONLINE TOOLS</p>
+          <p className="eyebrow">ROCHESTER, MINNESOTA · WEB DESIGN & ONLINE TOOLS</p>
           <h1>Websites built around how your business actually works.</h1>
           <p className="lede">
-            I build new sites, improve existing ones, and help with the online tools behind them. Clear pricing, a collaborative process, and no unnecessary technical jargon.
+            I design and build websites, improve existing sites, and help with the online tools behind them for independent service businesses in Minnesota and beyond. Clear pricing, a collaborative process, and no unnecessary technical jargon.
           </p>
           <div className="actions">
             <Link className="button button-dark" href="/pricing">See starting prices</Link>
