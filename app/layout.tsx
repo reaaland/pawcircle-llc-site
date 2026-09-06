@@ -8,7 +8,7 @@ import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
 import { siteConfig } from "../lib/site";
 
-const defaultTitle = `${siteConfig.name} | Small Business Websites in Rochester, MN`;
+const defaultTitle = `${siteConfig.name} | Web Design in Rochester, MN & Beyond`;
 const googleAnalyticsId = "G-NBPCCCC8M8";
 
 export const metadata: Metadata = {
@@ -47,11 +47,11 @@ const structuredData = {
       "@id": `${siteConfig.url}/#organization`,
       name: siteConfig.name,
       url: siteConfig.url,
+      logo: `${siteConfig.url}/icon.svg`,
       email: `mailto:${siteConfig.email}`,
       description: siteConfig.description,
       founder: {
-        "@type": "Person",
-        name: "Rebecca Aaland",
+        "@id": `${siteConfig.url}/#rebecca-aaland`,
       },
       areaServed: [
         {
@@ -62,7 +62,25 @@ const structuredData = {
           "@type": "State",
           name: "Minnesota",
         },
+        {
+          "@type": "Country",
+          name: "United States",
+        },
       ],
+    },
+    {
+      "@type": "Person",
+      "@id": `${siteConfig.url}/#rebecca-aaland`,
+      name: "Rebecca Aaland",
+      url: `${siteConfig.url}/about`,
+      jobTitle: "Web Designer and Developer",
+      worksFor: {
+        "@id": `${siteConfig.url}/#organization`,
+      },
+      homeLocation: {
+        "@type": "City",
+        name: "Rochester",
+      },
     },
     {
       "@type": "WebSite",
