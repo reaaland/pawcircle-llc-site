@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Website Services & Support",
+  title: "Web Design & Website Services",
   description:
-    "Website design, website improvements, SEO basics, ongoing care, and online business help from PawCircle LLC in Rochester, Minnesota.",
+    "Web design, website improvements, SEO basics, ongoing care, and online business help for independent service businesses in Rochester, Minnesota and beyond.",
   alternates: { canonical: "/services" },
 };
 
@@ -12,7 +12,7 @@ export default function ServicesPage() {
   return (
     <main className="shell page-shell">
       <p className="eyebrow">SERVICES</p>
-      <h1>Website help that fits what your business actually needs.</h1>
+      <h1>Web design and website help that fits what your business actually needs.</h1>
       <p className="lede page-lede">
         Whether you need a new website, a better version of the one you already have, or ongoing help after launch, I focus on useful improvements without adding complexity just for the sake of it.
       </p>
