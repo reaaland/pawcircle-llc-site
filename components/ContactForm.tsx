@@ -3,6 +3,9 @@
 import { FormEvent, useState } from "react";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
+type AnalyticsWindow = Window & {
+  gtag?: (...args: unknown[]) => void;
+};
 
 export function ContactForm() {
   const [status, setStatus] = useState<FormStatus>("idle");
@@ -12,6 +15,8 @@ export function ContactForm() {
 
     const form = event.currentTarget;
     const data = new FormData(form);
+    const projectType = String(data.get("projectType") ?? "").trim();
+    const budget = String(data.get("budget") ?? "").trim();
 
     setStatus("submitting");
 
@@ -24,8 +29,8 @@ export function ContactForm() {
           email: String(data.get("email") ?? "").trim(),
           business: String(data.get("business") ?? "").trim(),
           website: String(data.get("website") ?? "").trim(),
-          projectType: String(data.get("projectType") ?? "").trim(),
-          budget: String(data.get("budget") ?? "").trim(),
+          projectType,
+          budget,
           timeline: String(data.get("timeline") ?? "").trim(),
           message: String(data.get("message") ?? "").trim(),
           companySite: String(data.get("companySite") ?? "").trim(),
@@ -35,6 +40,12 @@ export function ContactForm() {
       if (!response.ok) {
         throw new Error("The contact request could not be sent.");
       }
+
+      (window as AnalyticsWindow).gtag?.("event", "generate_lead", {
+        form_name: "project_inquiry",
+        project_type: projectType,
+        budget_range: budget,
+      });
 
       form.reset();
       setStatus("success");
