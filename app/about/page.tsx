@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Rebecca Aaland",
+  title: "About Rebecca Aaland, Web Designer",
   description:
-    "Learn about PawCircle LLC and Rebecca Aaland's practical approach to building websites and online tools for independent service businesses.",
+    "Meet Rebecca Aaland, the web designer and developer behind PawCircle LLC in Rochester, Minnesota, serving independent service businesses in Minnesota and beyond.",
   alternates: { canonical: "/about" },
 };
 
@@ -38,7 +38,7 @@ export default function AboutPage() {
         <p className="eyebrow">ABOUT PAWCIRCLE LLC</p>
         <h1>A small web business built around practical help and clear communication.</h1>
         <p className="lede page-lede">
-          PawCircle LLC is a Rochester, Minnesota web business founded by Rebecca Aaland. I build professional websites, improve existing sites, and help independent service businesses make their online tools work better without making the process harder than it needs to be.
+          PawCircle LLC is a web design and development business based in Rochester, Minnesota, founded by Rebecca Aaland. I build professional websites, improve existing sites, and help independent service businesses in Minnesota and beyond make their online tools work better without making the process harder than it needs to be.
         </p>
       </section>
 
@@ -82,7 +82,7 @@ export default function AboutPage() {
               Rebecca Aaland
             </h2>
             <p style={{ color: "#c6d0e2", fontSize: "1.05rem" }}>
-              Developer, small-business owner, and former educator with 18 years of teaching experience.
+              Web designer and developer, small-business owner, and former educator with 18 years of teaching experience.
             </p>
           </div>
           <p style={{ color: "#9eabc0", margin: 0 }}>
