@@ -8,6 +8,29 @@ export const metadata: Metadata = {
   alternates: { canonical: "/pricing" },
 };
 
+const pricingCategories = [
+  {
+    title: "New websites",
+    text: "Starting-price tiers for new business websites, from simple sites to custom builds.",
+    href: "#new-websites",
+  },
+  {
+    title: "Existing website help",
+    text: "Refreshes, focused updates, and rebuild options for a site you already have.",
+    href: "#existing-websites",
+  },
+  {
+    title: "Website care",
+    text: "Ongoing help with routine changes, checks, questions, and small improvements.",
+    href: "#website-care",
+  },
+  {
+    title: "Custom online help",
+    text: "Forms, Google tools, simple automation, and other work quoted by scope.",
+    href: "#custom-help",
+  },
+] as const;
+
 const websitePlans = [
   {
     label: "SIMPLE WEBSITE",
@@ -122,7 +145,7 @@ const processSteps = [
 export default function PricingPage() {
   return (
     <main>
-      <section className="shell page-shell" style={{ paddingBottom: "58px" }}>
+      <section className="shell page-shell" style={{ paddingBottom: "34px" }}>
         <p className="eyebrow">PRICING</p>
         <h1>Clear starting prices before you reach out.</h1>
         <p className="lede page-lede">
@@ -130,7 +153,24 @@ export default function PricingPage() {
         </p>
       </section>
 
-      <section className="section shell pricing-section" style={{ paddingTop: "30px" }}>
+      <nav className="shell pricing-category-nav" aria-label="Pricing categories">
+        <div className="pricing-category-heading">
+          <p className="eyebrow">PRICING BY SERVICE</p>
+          <h2>Choose what you need.</h2>
+          <p>Jump straight to the kind of help you are looking for.</p>
+        </div>
+        <div className="pricing-category-grid">
+          {pricingCategories.map((category) => (
+            <a className="pricing-category-card" href={category.href} key={category.title}>
+              <strong>{category.title}</strong>
+              <span>{category.text}</span>
+              <b aria-hidden="true">↓</b>
+            </a>
+          ))}
+        </div>
+      </nav>
+
+      <section id="new-websites" className="section shell pricing-section pricing-anchor" style={{ paddingTop: "42px" }}>
         <div className="section-heading">
           <div>
             <p className="eyebrow">NEW WEBSITES</p>
@@ -184,7 +224,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section className="section shell">
+      <section id="existing-websites" className="section shell pricing-anchor">
         <div className="section-heading">
           <div>
             <p className="eyebrow">ALREADY HAVE A WEBSITE?</p>
@@ -197,7 +237,11 @@ export default function PricingPage() {
 
         <div className="detail-grid pricing-existing-grid">
           {existingSiteOptions.map((option) => (
-            <article className="detail-card" key={option.title}>
+            <article
+              className="detail-card"
+              key={option.title}
+              id={option.title === "Website Care" ? "website-care" : undefined}
+            >
               <p className="pricing-label">STARTING AT</p>
               <h2>{option.title}</h2>
               <p className="pricing-inline-price">{option.price}</p>
@@ -218,7 +262,7 @@ export default function PricingPage() {
         </aside>
       </section>
 
-      <section className="section shell" style={{ paddingTop: "20px" }}>
+      <section id="custom-help" className="section shell pricing-anchor" style={{ paddingTop: "20px" }}>
         <div className="section-heading">
           <div>
             <p className="eyebrow">CUSTOM ONLINE HELP</p>
