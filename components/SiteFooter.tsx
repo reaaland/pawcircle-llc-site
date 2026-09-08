@@ -14,6 +14,13 @@ export function SiteFooter() {
           <Link href="/work">Work</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
+          <a
+            href="https://www.rebeccaiaaland.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Rebecca&apos;s developer portfolio
+          </a>
           <a href="mailto:rebecca@pawcirclellc.com">rebecca@pawcirclellc.com</a>
         </div>
       </div>
