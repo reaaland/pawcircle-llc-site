@@ -1,3 +1,83 @@
+.pricing-category-nav {
+  padding-bottom: 34px;
+}
+
+.pricing-category-heading {
+  max-width: 720px;
+  margin-bottom: 18px;
+}
+
+.pricing-category-heading h2 {
+  margin: 8px 0 8px;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  letter-spacing: -.04em;
+}
+
+.pricing-category-heading > p:last-child {
+  margin: 0;
+  color: var(--muted);
+}
+
+.pricing-category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.pricing-category-card {
+  position: relative;
+  display: flex;
+  min-height: 168px;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 16px 45px rgba(24, 34, 58, .05);
+  padding: 24px 46px 24px 24px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.pricing-category-card:hover,
+.pricing-category-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--blue);
+  box-shadow: 0 20px 50px rgba(24, 34, 58, .09);
+}
+
+.pricing-category-card:focus-visible {
+  outline: 3px solid var(--blue-soft);
+  outline-offset: 3px;
+}
+
+.pricing-category-card strong {
+  font-size: 1.12rem;
+  letter-spacing: -.02em;
+}
+
+.pricing-category-card span {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.pricing-category-card b {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  color: var(--blue);
+  font-size: 1.15rem;
+}
+
+.pricing-anchor {
+  scroll-margin-top: 110px;
+}
+
+#website-care {
+  scroll-margin-top: 110px;
+}
+
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -160,6 +240,7 @@
 }
 
 @media (max-width: 960px) {
+  .pricing-category-grid,
   .pricing-grid,
   .expectation-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -167,9 +248,14 @@
 }
 
 @media (max-width: 620px) {
+  .pricing-category-grid,
   .pricing-grid,
   .expectation-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pricing-category-card {
+    min-height: 0;
   }
 
   .pricing-card,
