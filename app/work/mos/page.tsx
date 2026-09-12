@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/work/mos" },
 };
 
+const mosLiveScreenshot =
+  "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fmosmajerus.com?w=1600";
+
 const highlights = [
   [
     "01",
@@ -71,7 +74,7 @@ export default function MosCaseStudyPage() {
       <section className="section shell" style={{ paddingTop: "30px" }}>
         <div className="section-heading">
           <div>
-            <p className="eyebrow">THE DESIGN DIRECTION</p>
+            <p className="eyebrow">THE FINISHED SITE</p>
             <h2>Different from Minnlawn by design.</h2>
           </div>
           <p>
@@ -81,10 +84,10 @@ export default function MosCaseStudyPage() {
 
         <div className="detail-card" style={{ padding: "0", overflow: "hidden" }}>
           <img
-            src="/mos-project-preview.svg"
-            alt="Majerus Outdoor Services website project preview in steel blue, concrete gray, white, and orange"
+            src={mosLiveScreenshot}
+            alt="Live screenshot of the Majerus Outdoor Services website homepage"
             loading="lazy"
-            style={{ display: "block", width: "100%", height: "auto" }}
+            style={{ display: "block", width: "100%", aspectRatio: "16 / 9", objectFit: "cover", objectPosition: "top" }}
           />
         </div>
       </section>
