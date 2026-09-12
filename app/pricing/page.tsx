@@ -45,6 +45,15 @@ const websitePlans = [
       "Contact form",
       "Launch support",
     ],
+    example: {
+      badge: "SAMPLE CONCEPT",
+      title: "Willow Wellness Center",
+      text: "A light, polished wellness-center concept showing how a smaller website can still feel custom, thoughtful, and professional.",
+      note: "Concept example created to show the design and scope of this package. Not a client project.",
+      image: "/willow-wellness-sample.svg",
+      imageAlt: "Willow Wellness Center sample website concept in a light cream, sage, and dusty-blue design",
+      href: null,
+    },
   },
   {
     label: "SMALL BUSINESS WEBSITE",
@@ -59,6 +68,15 @@ const websitePlans = [
       "Contact or quote form",
       "Foundational SEO and launch setup",
     ],
+    example: {
+      badge: "CLIENT EXAMPLE",
+      title: "Majerus Outdoor Services",
+      text: "A responsive multi-page website for an owner-operated Rochester-area concrete and outdoor-services business, with clear service paths, project proof, and an easier contact and quote experience.",
+      note: "Real client project. The difference from the Simple tier is the amount of content, planning, and custom organization—not the level of care or professionalism.",
+      image: "/mos-project-preview.svg",
+      imageAlt: "Majerus Outdoor Services website project preview in steel blue, concrete gray, white, and orange",
+      href: "/work/mos",
+    },
   },
   {
     label: "CUSTOM BUSINESS WEBSITE",
@@ -73,6 +91,15 @@ const websitePlans = [
       "More detailed SEO, performance, or Google setup",
       "More involved launch and transition support",
     ],
+    example: {
+      badge: "CLIENT EXAMPLE",
+      title: "Minnlawn Lawn & Landscape",
+      text: "A custom rebuild with seasonal automation, quote functionality, Google review integration, deeper SEO and search setup, performance work, and domain and hosting transition support.",
+      note: "Real client project. The higher price reflects the extra features, integrations, testing, search work, and launch support behind the finished site.",
+      image: "/minnlawn-project-preview.svg",
+      imageAlt: "Minnlawn Lawn and Landscape custom website project preview in green, charcoal, and white",
+      href: "/work/minnlawn",
+    },
   },
 ] as const;
 
@@ -177,7 +204,7 @@ export default function PricingPage() {
             <h2>Choose the level that looks closest to what you need.</h2>
           </div>
           <p>
-            A simple informational site takes less time than a site with custom forms, Google tools, automation, deeper SEO work, or special features. The price grows with the amount of planning and work involved.
+            Every tier is designed to look professional and work well. The difference is scope: how much content, planning, custom functionality, search work, and launch support the project needs.
           </p>
         </div>
 
@@ -191,6 +218,21 @@ export default function PricingPage() {
               <ul>
                 {plan.details.map((detail) => <li key={detail}>{detail}</li>)}
               </ul>
+
+              <div className="pricing-tier-example">
+                <img src={plan.example.image} alt={plan.example.imageAlt} loading="lazy" />
+                <div className="pricing-tier-example-copy">
+                  <p className="pricing-example-badge">{plan.example.badge}</p>
+                  <h3>{plan.example.title}</h3>
+                  <p>{plan.example.text}</p>
+                  <p className="pricing-example-note">{plan.example.note}</p>
+                  {plan.example.href ? (
+                    <Link className="pricing-example-link" href={plan.example.href}>
+                      See this example →
+                    </Link>
+                  ) : null}
+                </div>
+              </div>
             </article>
           ))}
         </div>
@@ -199,26 +241,27 @@ export default function PricingPage() {
       <section className="split-section">
         <div className="shell split-grid">
           <div>
-            <p className="eyebrow">WHY SOME PROJECTS COST MORE</p>
-            <h2>Minnlawn is a good example of a Custom Business Website.</h2>
+            <p className="eyebrow">SCOPE, NOT QUALITY</p>
+            <h2>MOS and Minnlawn show why two professional sites can belong in different tiers.</h2>
             <p className="lede-small">
-              Minnlawn already had a website, but the rebuild involved much more than changing the look. The project included service restructuring, seasonal content that changes automatically, quote functionality, Google review integration and Google Cloud/API setup, SEO and behind-the-scenes search setup including schema, sitemap, and robots files, performance testing, and domain and hosting transition support.
+              Majerus Outdoor Services is a good Small Business Website example: a polished multi-page site with custom visual direction, clearer service organization, project proof, responsive layouts, a strong contact path, and foundational search setup.
             </p>
             <p className="lede-small">
-              Those extra layers of planning, setup, testing, and custom work are what move a project into the higher price range.
+              Minnlawn moves into the Custom Business Website tier because the project added more advanced layers behind the design: seasonal automation, quote functionality, Google review integration and Google Cloud/API setup, deeper SEO and schema work, performance testing, and domain and hosting transition support.
             </p>
             <p className="lede-small">
-              As I complete more client projects, I will add examples here so you can compare different project sizes and see what moved them into each price range.
+              Both are professional client websites. The higher tier is not a better-looking website by definition; it simply includes more planning, functionality, integrations, testing, and technical setup.
             </p>
             <div className="actions">
+              <Link className="button button-light" href="/work/mos">See the MOS case study</Link>
               <Link className="button button-light" href="/work/minnlawn">See the Minnlawn case study</Link>
             </div>
           </div>
           <div className="quote-card pricing-example-card">
-            <p className="eyebrow">A SIMPLE WAY TO THINK ABOUT IT</p>
-            <h3>A bigger price should come with a clear reason.</h3>
+            <p className="eyebrow">PROFESSIONAL AT EVERY LEVEL</p>
+            <h3>Smaller scope should never mean lower standards.</h3>
             <p>
-              More pages alone do not tell the whole story. Custom features, integrations, content work, search setup, troubleshooting, and launch support can all add time to a project. I will explain what is adding to the cost before we move forward.
+              A Simple Website can still be thoughtful, responsive, polished, and built around the business. As the scope grows, the price reflects the additional pages, decisions, features, integrations, search work, testing, and launch support—not a change in how seriously I take the project.
             </p>
           </div>
         </div>
