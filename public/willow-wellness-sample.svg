@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Willow Wellness Center sample website concept</title>
+  <desc id="desc">A light cream, sage, and dusty-blue starter website concept clearly labeled Sample Concept and Not a client project.</desc>
+  <defs>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f2e8"/>
+      <stop offset="1" stop-color="#e6eef0"/>
+    </linearGradient>
+    <linearGradient id="photo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8e3d7"/>
+      <stop offset=".55" stop-color="#f2e8da"/>
+      <stop offset="1" stop-color="#cddce3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#33444b" flood-opacity=".10"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" rx="28" fill="#fbf8f2"/>
+  <rect x="42" y="36" width="1116" height="688" rx="24" fill="#fffdf9" stroke="#e8e1d6" filter="url(#shadow)"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#273c46">
+    <path d="M83 86c18-28 35-25 42-48-3 27-14 42-31 53m-7-22c-14-10-19-22-18-38 13 12 19 25 18 38m10 3c13-12 25-16 39-13-13 13-26 19-39 13" fill="none" stroke="#789582" stroke-width="3" stroke-linecap="round"/>
+    <text x="145" y="72" font-family="Georgia, serif" font-size="34" font-weight="700">Willow</text>
+    <text x="146" y="95" font-size="11" font-weight="700" letter-spacing="3">WELLNESS CENTER</text>
+    <rect x="355" y="53" width="120" height="30" rx="15" fill="#dce9ef"/>
+    <text x="415" y="73" text-anchor="middle" font-size="12" font-weight="700" fill="#536f79">SAMPLE CONCEPT</text>
+    <text x="735" y="75" font-size="14">Home</text>
+    <text x="804" y="75" font-size="14">Services</text>
+    <text x="887" y="75" font-size="14">About</text>
+    <text x="952" y="75" font-size="14">Contact</text>
+    <rect x="1020" y="49" width="115" height="38" rx="19" fill="#789582"/>
+    <text x="1078" y="73" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Book a visit</text>
+  </g>
+
+  <rect x="68" y="122" width="1064" height="290" rx="28" fill="url(#hero)"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="104" y="170" font-size="12" font-weight="700" letter-spacing="3" fill="#789582">A HEALTHIER, BRIGHTER YOU</text>
+    <text x="104" y="225" font-family="Georgia, serif" font-size="47" font-weight="700" fill="#263a44">Calm, supportive care</text>
+    <text x="104" y="278" font-family="Georgia, serif" font-size="47" font-weight="700" fill="#263a44">for body and mind.</text>
+    <text x="104" y="317" font-size="17" fill="#66777d">A focused starter site with clear services, warm visuals,</text>
+    <text x="104" y="343" font-size="17" fill="#66777d">and an easy path for visitors to get in touch.</text>
+    <rect x="104" y="365" width="165" height="42" rx="21" fill="#789582"/>
+    <text x="186" y="391" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Book a consultation</text>
+    <rect x="286" y="365" width="140" height="42" rx="21" fill="#fffdf9" stroke="#91a39c"/>
+    <text x="356" y="391" text-anchor="middle" font-size="14" font-weight="700" fill="#546d65">Explore services</text>
+  </g>
+
+  <g transform="translate(655 145)">
+    <rect width="430" height="235" rx="32" fill="url(#photo)"/>
+    <circle cx="330" cy="78" r="48" fill="#f7efe4" opacity=".9"/>
+    <path d="M102 182c22-62 28-95 28-141m0 63c-24-31-51-38-75-23 25 7 47 14 75 23m2-31c24-27 49-34 76-22-23 7-48 14-76 22" fill="none" stroke="#7d9a83" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+    <rect x="232" y="145" width="128" height="18" rx="9" fill="#c3d1d4"/>
+    <rect x="245" y="167" width="150" height="18" rx="9" fill="#e9ded0"/>
+    <rect x="260" y="189" width="112" height="18" rx="9" fill="#f8f4ee"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="600" y="459" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="3" fill="#789582">SERVICES</text>
+    <text x="600" y="497" text-anchor="middle" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#263a44">Simple scope. Professional presentation.</text>
+
+    <g transform="translate(80 530)">
+      <rect width="326" height="130" rx="20" fill="#fff" stroke="#e9e3da"/>
+      <circle cx="48" cy="47" r="25" fill="#e5eee6"/>
+      <path d="M34 49c17-18 28-19 31-30-2 15-8 24-19 31" fill="none" stroke="#789582" stroke-width="3"/>
+      <text x="86" y="43" font-family="Georgia, serif" font-size="23" font-weight="700" fill="#273c46">Massage Therapy</text>
+      <text x="86" y="70" font-size="14" fill="#68787d">Relax, restore, and feel your best.</text>
+      <text x="28" y="108" font-size="13" fill="#879295">Focused service content</text>
+    </g>
+    <g transform="translate(437 530)">
+      <rect width="326" height="130" rx="20" fill="#fff" stroke="#e9e3da"/>
+      <circle cx="48" cy="47" r="25" fill="#e4edf2"/>
+      <path d="M36 38h24v20H36zM40 43h16M40 48h12" fill="none" stroke="#688493" stroke-width="2.5"/>
+      <text x="86" y="43" font-family="Georgia, serif" font-size="23" font-weight="700" fill="#273c46">Wellness Coaching</text>
+      <text x="86" y="70" font-size="14" fill="#68787d">Practical support and clear next steps.</text>
+      <text x="28" y="108" font-size="13" fill="#879295">Clear calls to action</text>
+    </g>
+    <g transform="translate(794 530)">
+      <rect width="326" height="130" rx="20" fill="#fff" stroke="#e9e3da"/>
+      <circle cx="48" cy="47" r="25" fill="#eee5db"/>
+      <circle cx="48" cy="37" r="7" fill="none" stroke="#8b7869" stroke-width="2.5"/>
+      <path d="M48 45v20M32 55h32M39 67l9-9 9 9" fill="none" stroke="#8b7869" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="86" y="43" font-family="Georgia, serif" font-size="23" font-weight="700" fill="#273c46">Mindful Movement</text>
+      <text x="86" y="70" font-size="14" fill="#68787d">Build strength, reduce stress, find balance.</text>
+      <text x="28" y="108" font-size="13" fill="#879295">Responsive, uncluttered layout</text>
+    </g>
+
+    <rect x="80" y="682" width="1040" height="1" fill="#e6dfd5"/>
+    <text x="80" y="707" font-size="12" font-weight="700" letter-spacing="2" fill="#6f8085">TIER 1 PRESENTATION SAMPLE</text>
+    <text x="1120" y="707" text-anchor="end" font-size="13" font-weight="700" fill="#8a6969">NOT A CLIENT PROJECT</text>
+  </g>
+</svg>

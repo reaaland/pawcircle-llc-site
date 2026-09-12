@@ -82,6 +82,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+  align-items: stretch;
 }
 
 .pricing-card,
@@ -96,6 +97,8 @@
 
 .pricing-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   padding: 32px;
 }
@@ -152,6 +155,78 @@
 
 .pricing-card li + li {
   margin-top: 9px;
+}
+
+.pricing-tier-example {
+  margin-top: 30px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #f8f9fc;
+}
+
+.pricing-tier-example img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 12 / 7.6;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+  background: #eef1f4;
+}
+
+.pricing-tier-example-copy {
+  padding: 22px;
+}
+
+.pricing-tier-example-copy h3 {
+  margin: 10px 0 9px;
+  color: var(--ink);
+  font-size: 1.25rem;
+  line-height: 1.15;
+  letter-spacing: -.025em;
+}
+
+.pricing-tier-example-copy > p:not(.pricing-example-badge) {
+  margin: 0;
+  color: var(--muted);
+  font-size: .94rem;
+  line-height: 1.55;
+}
+
+.pricing-example-badge {
+  display: inline-flex;
+  margin: 0;
+  border: 1px solid rgba(45, 125, 255, .22);
+  border-radius: 999px;
+  background: var(--blue-soft);
+  padding: 6px 9px;
+  color: var(--blue);
+  font-size: .66rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.pricing-example-note {
+  margin-top: 12px !important;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: .84rem !important;
+}
+
+.pricing-example-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--blue);
+  font-size: .9rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.pricing-example-link:hover,
+.pricing-example-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .pricing-example-card .eyebrow {
@@ -245,6 +320,10 @@
   .expectation-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .pricing-grid .pricing-card:last-child {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 620px) {
@@ -252,6 +331,10 @@
   .pricing-grid,
   .expectation-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pricing-grid .pricing-card:last-child {
+    grid-column: auto;
   }
 
   .pricing-category-card {
@@ -263,5 +346,9 @@
   .template-note,
   .pricing-note {
     padding: 26px 22px;
+  }
+
+  .pricing-tier-example-copy {
+    padding: 18px;
   }
 }
