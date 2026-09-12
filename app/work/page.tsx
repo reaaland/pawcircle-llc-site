@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/work" },
 };
 
+const minnlawnScreenshot = "https://www.rebeccaiaaland.com/MinnLawn.png";
+const pawCircleScreenshot = "https://www.rebeccaiaaland.com/pawcircle-homepage.png";
+const mosLiveScreenshot =
+  "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fmosmajerus.com?w=1600";
+
 export default function WorkPage() {
   return (
     <main>
@@ -35,18 +40,29 @@ export default function WorkPage() {
               <a className="button button-light" href="https://minnlawn.com" target="_blank" rel="noreferrer">Visit Minnlawn website</a>
             </div>
           </div>
-          <blockquote className="quote-card">
-            <p>
-              “Rebecca stepped in as an absolute superhero and completely transformed my online presence into something far better than I could have imagined on my own. Every single metric improved dramatically. The site is now a powerful asset for my business.”
-            </p>
-            <span>— Yohan, Minnlawn Lawn & Landscape</span>
-            <Link
-              href="/work/minnlawn#testimonial"
-              style={{ display: "block", marginTop: "24px", color: "#58c9ff", fontWeight: 800 }}
-            >
-              Read Yohan&apos;s full testimonial →
-            </Link>
-          </blockquote>
+
+          <div style={{ display: "grid", gap: "18px" }}>
+            <div className="detail-card" style={{ padding: "0", overflow: "hidden" }}>
+              <img
+                src={minnlawnScreenshot}
+                alt="Minnlawn Lawn & Landscape website homepage"
+                loading="lazy"
+                style={{ display: "block", width: "100%", height: "auto" }}
+              />
+            </div>
+            <blockquote className="quote-card">
+              <p>
+                “Rebecca stepped in as an absolute superhero and completely transformed my online presence into something far better than I could have imagined on my own. Every single metric improved dramatically. The site is now a powerful asset for my business.”
+              </p>
+              <span>— Yohan, Minnlawn Lawn & Landscape</span>
+              <Link
+                href="/work/minnlawn#testimonial"
+                style={{ display: "block", marginTop: "24px", color: "#58c9ff", fontWeight: 800 }}
+              >
+                Read Yohan&apos;s full testimonial →
+              </Link>
+            </blockquote>
+          </div>
         </div>
       </section>
 
@@ -64,10 +80,10 @@ export default function WorkPage() {
         <div className="split-grid">
           <div className="detail-card" style={{ padding: "0", overflow: "hidden" }}>
             <img
-              src="/mos-project-preview.svg"
-              alt="Majerus Outdoor Services website project preview in steel blue, concrete gray, white, and orange"
+              src={mosLiveScreenshot}
+              alt="Live screenshot of the Majerus Outdoor Services website homepage"
               loading="lazy"
-              style={{ display: "block", width: "100%", height: "auto" }}
+              style={{ display: "block", width: "100%", aspectRatio: "16 / 9", objectFit: "cover", objectPosition: "top" }}
             />
             <div style={{ padding: "30px" }}>
               <p className="eyebrow">SMALL BUSINESS WEBSITE EXAMPLE</p>
@@ -101,17 +117,25 @@ export default function WorkPage() {
           </p>
         </div>
 
-        <article className="detail-card" style={{ padding: "42px" }}>
-          <p className="eyebrow">FULL-STACK MEMBERSHIP APPLICATION</p>
-          <h2 style={{ fontSize: "clamp(2.2rem, 4.5vw, 4rem)", margin: "18px 0" }}>
-            From business idea to a working membership application.
-          </h2>
-          <p className="lede-small">
-            Built with React, Supabase/PostgreSQL, Stripe, authentication, role-based profiles, privacy controls, payment workflows, and Vercel deployment.
-          </p>
-          <div className="actions">
-            <Link className="button button-dark" href="/work/pawcircle">Read the PawCircle case study</Link>
-            <a className="button button-light" href="https://www.pawcirclemembership.com" target="_blank" rel="noreferrer">View live project</a>
+        <article className="detail-card" style={{ padding: "0", overflow: "hidden" }}>
+          <img
+            src={pawCircleScreenshot}
+            alt="PawCircle Membership portfolio-demo homepage"
+            loading="lazy"
+            style={{ display: "block", width: "100%", height: "auto" }}
+          />
+          <div style={{ padding: "42px" }}>
+            <p className="eyebrow">FULL-STACK MEMBERSHIP APPLICATION</p>
+            <h2 style={{ fontSize: "clamp(2.2rem, 4.5vw, 4rem)", margin: "18px 0" }}>
+              From business idea to a working membership application.
+            </h2>
+            <p className="lede-small">
+              Built with React, Supabase/PostgreSQL, Stripe, authentication, role-based profiles, privacy controls, payment workflows, and Vercel deployment.
+            </p>
+            <div className="actions">
+              <Link className="button button-dark" href="/work/pawcircle">Read the PawCircle case study</Link>
+              <a className="button button-light" href="https://www.pawcirclemembership.com" target="_blank" rel="noreferrer">View live project</a>
+            </div>
           </div>
         </article>
       </section>
