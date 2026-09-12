@@ -93,6 +93,7 @@ export default function WorkPage() {
               </p>
               <div className="actions">
                 <Link className="button button-dark" href="/work/mos">Read the MOS case study</Link>
+                <a className="button button-light" href="https://mosmajerus.com" target="_blank" rel="noreferrer">Visit MOS website</a>
               </div>
             </div>
           </div>
