@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/pricing" },
 };
 
+const mosLiveScreenshot =
+  "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fmosmajerus.com?w=1600";
+
 const pricingCategories = [
   {
     title: "New websites",
@@ -73,8 +76,8 @@ const websitePlans = [
       title: "Majerus Outdoor Services",
       text: "A responsive multi-page website for an owner-operated Rochester-area concrete and outdoor-services business, with clear service paths, project proof, and an easier contact and quote experience.",
       note: "Real client project. The difference from the Simple tier is the amount of content, planning, and custom organization—not the level of care or professionalism.",
-      image: "/mos-project-preview.svg",
-      imageAlt: "Majerus Outdoor Services website project preview in steel blue, concrete gray, white, and orange",
+      image: mosLiveScreenshot,
+      imageAlt: "Live screenshot of the Majerus Outdoor Services website homepage",
       href: "/work/mos",
     },
   },
