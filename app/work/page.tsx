@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Client Work & Case Studies",
   description:
-    "See PawCircle LLC website and software case studies, including a custom Minnlawn rebuild and the PawCircle Membership product.",
+    "See PawCircle LLC client website and software case studies, including Majerus Outdoor Services, Minnlawn Lawn & Landscape, and the PawCircle Membership product.",
   alternates: { canonical: "/work" },
 };
 
@@ -53,6 +53,46 @@ export default function WorkPage() {
       <section className="section shell" style={{ paddingTop: "80px", paddingBottom: "70px" }}>
         <div className="section-heading" style={{ marginBottom: "34px" }}>
           <div>
+            <p className="eyebrow">CLIENT PROJECT · MAJERUS OUTDOOR SERVICES</p>
+            <h2>A professional website for an owner-operated service business.</h2>
+          </div>
+          <p>
+            MOS is a good example of a polished small-business website where the value comes from clear structure, custom visual direction, responsive design, project proof, and making it easy for a potential customer to understand the services and take the next step.
+          </p>
+        </div>
+
+        <div className="split-grid">
+          <div className="detail-card" style={{ padding: "0", overflow: "hidden" }}>
+            <img
+              src="/mos-project-preview.svg"
+              alt="Majerus Outdoor Services website project preview in steel blue, concrete gray, white, and orange"
+              loading="lazy"
+              style={{ display: "block", width: "100%", height: "auto" }}
+            />
+            <div style={{ padding: "30px" }}>
+              <p className="eyebrow">SMALL BUSINESS WEBSITE EXAMPLE</p>
+              <h2 style={{ marginTop: "12px" }}>Majerus Outdoor Services</h2>
+              <p>
+                The site organizes concrete and outdoor services into clearer customer paths, uses a professional contractor-focused visual system, presents project work as proof, and supports a straightforward contact and estimate experience on desktop and mobile.
+              </p>
+              <div className="actions">
+                <Link className="button button-dark" href="/work/mos">Read the MOS case study</Link>
+              </div>
+            </div>
+          </div>
+
+          <blockquote className="quote-card">
+            <p>
+              “Fast, professional service. Rebecca was great to work with. She made, what seemed to me, to be a stressful job, very simple and thorough. I would definitely recommend her.”
+            </p>
+            <span>— Jason Majerus, Majerus Outdoor Services · Google review</span>
+          </blockquote>
+        </div>
+      </section>
+
+      <section className="section shell" style={{ paddingTop: "40px", paddingBottom: "70px" }}>
+        <div className="section-heading" style={{ marginBottom: "34px" }}>
+          <div>
             <p className="eyebrow">SOFTWARE PROJECT</p>
             <h2>PawCircle Membership</h2>
           </div>
@@ -79,7 +119,7 @@ export default function WorkPage() {
       <section className="cta shell">
         <p className="eyebrow">COMPARE PROJECT SCOPE</p>
         <h2>Want to see how the amount of work affects the price?</h2>
-        <p>The pricing page explains the difference between a simple site, a fuller small-business site, and a custom build like Minnlawn.</p>
+        <p>The pricing page compares a simple sample concept with a real small-business client project like MOS and a more advanced custom build like Minnlawn.</p>
         <div className="actions">
           <Link className="button button-dark" href="/pricing">See pricing</Link>
           <Link className="button button-light" href="/contact">Request a written estimate</Link>
