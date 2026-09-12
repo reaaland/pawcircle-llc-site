@@ -7,6 +7,7 @@ const routes = [
   "/pricing",
   "/work",
   "/work/minnlawn",
+  "/work/mos",
   "/work/pawcircle",
   "/about",
   "/contact",
