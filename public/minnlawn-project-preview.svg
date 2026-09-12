@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Minnlawn Lawn and Landscape website project preview</title>
+  <desc id="desc">A professional green, charcoal, and white project visual representing the custom Minnlawn website rebuild.</desc>
+  <defs>
+    <linearGradient id="lawn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173b2a"/>
+      <stop offset=".55" stop-color="#356847"/>
+      <stop offset="1" stop-color="#7d9f69"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c7d8ae"/>
+      <stop offset="1" stop-color="#edf1df"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#102419" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="1200" height="760" rx="28" fill="#eef1eb"/>
+  <rect x="42" y="36" width="1116" height="688" rx="24" fill="#fff" stroke="#d5ded3" filter="url(#shadow)"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="68" y="56" width="1064" height="50" rx="8" fill="#183b2a"/>
+    <text x="94" y="86" font-size="24" font-weight="900" fill="#fff">MINNLAWN</text>
+    <text x="245" y="84" font-size="11" font-weight="700" letter-spacing="2" fill="#c9d6cc">LAWN &amp; LANDSCAPE</text>
+    <text x="720" y="85" font-size="12" font-weight="700" fill="#fff">SERVICES</text>
+    <text x="805" y="85" font-size="12" font-weight="700" fill="#fff">GALLERY</text>
+    <text x="885" y="85" font-size="12" font-weight="700" fill="#fff">ABOUT</text>
+    <rect x="962" y="66" width="145" height="30" rx="15" fill="#d7e35a"/>
+    <text x="1035" y="86" text-anchor="middle" font-size="11" font-weight="900" fill="#1b3427">GET A FREE QUOTE</text>
+  </g>
+  <rect x="68" y="122" width="1064" height="326" rx="18" fill="url(#lawn)"/>
+  <path d="M635 448c75-130 172-204 294-221 70-10 136 2 203 41v180z" fill="url(#field)" opacity=".9"/>
+  <path d="M649 448c78-101 171-160 278-177 69-11 137-2 205 28" fill="none" stroke="#fff" stroke-width="22" opacity=".45"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="104" y="159" width="154" height="29" rx="5" fill="#d7e35a"/>
+    <text x="181" y="179" text-anchor="middle" font-size="11" font-weight="900" letter-spacing="1.5" fill="#183b2a">ROCHESTER, MINNESOTA</text>
+    <text x="104" y="245" font-size="52" font-weight="900" fill="#fff">Lawn care &amp;</text>
+    <text x="104" y="302" font-size="52" font-weight="900" fill="#fff">landscaping built</text>
+    <text x="104" y="359" font-size="52" font-weight="900" fill="#fff">around the season.</text>
+    <text x="104" y="399" font-size="17" fill="#e5eee8">Clear services, project proof, seasonal content, and an easy quote path.</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" transform="translate(80 484)">
+    <text x="0" y="0" font-size="11" font-weight="900" letter-spacing="2.4" fill="#56744c">CUSTOM WEBSITE FEATURES</text>
+    <text x="0" y="38" font-size="29" font-weight="900" fill="#203429">More custom work behind the finished site.</text>
+    <g transform="translate(0 66)"><rect width="245" height="112" rx="14" fill="#f8faf6" stroke="#d6dfd3"/><text x="24" y="40" font-size="17" font-weight="900" fill="#203429">SEASONAL CONTENT</text><text x="24" y="68" font-size="13" fill="#66786b">Relevant services change</text><text x="24" y="90" font-size="13" fill="#66786b">automatically by season.</text></g>
+    <g transform="translate(265 66)"><rect width="245" height="112" rx="14" fill="#f8faf6" stroke="#d6dfd3"/><text x="24" y="40" font-size="17" font-weight="900" fill="#203429">QUOTE FLOW</text><text x="24" y="68" font-size="13" fill="#66786b">Clear customer paths and</text><text x="24" y="90" font-size="13" fill="#66786b">photo-supported requests.</text></g>
+    <g transform="translate(530 66)"><rect width="245" height="112" rx="14" fill="#f8faf6" stroke="#d6dfd3"/><text x="24" y="40" font-size="17" font-weight="900" fill="#203429">GOOGLE + SEO</text><text x="24" y="68" font-size="13" fill="#66786b">Reviews, schema, search,</text><text x="24" y="90" font-size="13" fill="#66786b">sitemap and indexing setup.</text></g>
+    <g transform="translate(795 66)"><rect width="245" height="112" rx="14" fill="#f8faf6" stroke="#d6dfd3"/><text x="24" y="40" font-size="17" font-weight="900" fill="#203429">LAUNCH SUPPORT</text><text x="24" y="68" font-size="13" fill="#66786b">Performance testing plus</text><text x="24" y="90" font-size="13" fill="#66786b">domain and hosting transition.</text></g>
+  </g>
+  <rect x="80" y="688" width="1040" height="1" fill="#d5ded3"/>
+  <g font-family="Arial, Helvetica, sans-serif"><text x="80" y="710" font-size="12" font-weight="800" letter-spacing="2" fill="#41594a">CLIENT PROJECT · MINNLAWN LAWN &amp; LANDSCAPE</text><text x="1120" y="710" text-anchor="end" font-size="12" font-weight="800" fill="#56744c">CUSTOM BUSINESS WEBSITE</text></g>
+</svg>
