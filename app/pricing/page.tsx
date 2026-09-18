@@ -19,12 +19,12 @@ const pricingCategories = [
   },
   {
     title: "Existing website help",
-    text: "Refreshes, focused updates, and rebuild options for a site you already have.",
+    text: "Focused refreshes, one-time updates, and rebuild options for a site you already have.",
     href: "#existing-websites",
   },
   {
     title: "Website care",
-    text: "Ongoing help with routine changes, checks, questions, and small improvements.",
+    text: "$99/month for routine checks, questions, and a limited amount of small website updates.",
     href: "#website-care",
   },
   {
@@ -40,9 +40,9 @@ const websitePlans = [
     title: "Simple Website",
     price: "$1,500",
     summary:
-      "For a business that needs a clean, professional website without a large custom build.",
+      "For a business that needs a polished 1–3 page website with the essentials covered.",
     details: [
-      "A smaller site with the core pages customers need",
+      "Typically 1–3 core pages",
       "Mobile-friendly design",
       "Basic search setup",
       "Contact form",
@@ -63,9 +63,9 @@ const websitePlans = [
     title: "Small Business Website",
     price: "$2,500",
     summary:
-      "For a business that needs a fuller website with clearer services, stronger organization, and a more polished customer experience.",
+      "For a business that needs a fuller 4–7 page website with clearer services, stronger organization, and a more polished customer experience.",
     details: [
-      "Custom multi-page design",
+      "Typically 4–7 pages with a custom layout",
       "Visual website concepts before development begins",
       "Clearer service and customer paths",
       "Contact or quote form",
@@ -86,9 +86,9 @@ const websitePlans = [
     title: "Custom Business Website",
     price: "$4,500",
     summary:
-      "For a business that needs a larger build with custom features, integrations, deeper search work, or more involved setup.",
+      "For a business that needs 7+ pages, custom functionality, integrations, or a more involved technical setup.",
     details: [
-      "Custom multi-page design and development",
+      "Typically 7+ pages, or a smaller site with advanced functionality",
       "Visual website concepts before development begins",
       "Custom forms, features, or integrations",
       "More detailed SEO, performance, or Google setup",
@@ -110,17 +110,17 @@ const existingSiteOptions = [
   {
     title: "Website Refresh",
     price: "$750",
-    text: "For a site that already has a solid foundation but needs clearer content, design cleanup, better mobile layouts, stronger calls to action, or other focused improvements.",
+    text: "For a site that already works but needs a focused cleanup. The $750 starting point is meant for improvements across about 3–5 pages; larger refreshes are quoted based on the work involved.",
   },
   {
     title: "Small Website Updates",
     price: "$150",
-    text: "For a clearly defined change such as updating text or photos, adding a service, fixing links, or making another small improvement.",
+    text: "For one clearly defined set of small changes, such as updating text or photos, adding a service, fixing links, or making another minor improvement.",
   },
   {
     title: "Website Care",
     price: "$99/month",
-    text: "For businesses that want ongoing help with content changes, routine checks, small improvements, and questions after launch. Larger changes are quoted separately.",
+    text: "For businesses that want ongoing help after launch. Includes routine website checks, help with questions, and up to 1 hour each month for small text, photo, link, or contact-information updates. Unused time does not roll over. New pages, redesign work, integrations, SEO projects, and larger changes are quoted separately.",
   },
   {
     title: "Full Website Rebuild",
