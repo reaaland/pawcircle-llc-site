@@ -1,44 +1,18 @@
 # PawCircle LLC Website
 
-Public business website for PawCircle LLC, positioned as a practical website and technology partner for independent service businesses.
+This repository previously powered the public PawCircle LLC web-services site.
 
-## Purpose
+The public-facing business has moved to **Aaland Web Design & Site Care** at:
 
-The site presents PawCircle LLC around services it can offer now:
+https://rebeccaiaaland.com
 
-- Small-business websites
-- Website maintenance and improvements
-- SEO, launch, accessibility, and performance basics
-- Practical help with website workflows, forms, Google tools, and related small-business technology
+## Current production behavior
 
-## Stack
+The Next.js app now exists only to provide permanent redirects from the legacy
+`pawcirclellc.com` website to the new Aaland Web Design & Site Care site.
 
-- Next.js App Router
-- React
-- TypeScript
-- Plain CSS
+Known public routes redirect to their matching pages on `rebeccaiaaland.com`.
+Any other legacy route redirects to the new homepage.
 
-## Pages
-
-- `/` Home
-- `/services`
-- `/work`
-- `/about`
-- `/contact`
-
-## Site configuration
-
-Shared public identity values live in `lib/site.ts`, including the company name, tagline, PawCircle business email, Rochester location, and canonical domain.
-
-## Local development
-
-```bash
-npm install
-npm run dev
-```
-
-Production check:
-
-```bash
-npm run build
-```
+The `pawcirclellc.com` domain remains owned and can continue to support
+non-website DNS records such as email.
